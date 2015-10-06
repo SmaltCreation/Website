@@ -1,0 +1,197 @@
+@font-face {
+    font-family: quadranta;
+    src: url(/fonts/quadranta/Quadranta-Bold.otf);
+}
+
+#home header {
+    background: #27272b url("/images/home-banner.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 25px;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+#home header .brand {
+    color: #ffffff;
+    font-family: quadranta, 'Lato', Arial, sans-serif;
+}
+
+#home header h1 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+#home header h2 {
+    color: #cccccc;
+    letter-spacing: 0.3px;
+    font-size: 20px;
+}
+
+#home header small a,
+#home header small {
+    color: #4ebaba;
+    display: inline-block;
+}
+
+#home header small a {
+    text-decoration: none;
+    -webkit-transition: ease-out .3s;
+    -moz-transition: ease-out .3s;
+    -ms-transition: ease-out .3s;
+    -o-transition: ease-out .3s;
+    transition: ease-out .3s;
+}
+
+#home header small a:hover {
+    color: #f5f5f5;
+}
+
+#home header .banner-separator {
+    height: 100px;
+    background: transparent url("/images/home-banner-separator.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: contain;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #home header {
+        padding-top: 50px;
+    }
+    #home header h1 {
+        font-size: 50px;
+    }
+    #home header h2 {
+        font-size: 30px;
+    }
+    #home header .banner-separator {
+        height: 120px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #home header {
+        padding-top: 75px;
+    }
+    #home header h1 {
+        font-size: 75px;
+    }
+    #home header h2 {
+        font-size: 50px;
+    }
+    #home header .banner-separator {
+        height: 170px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #home header {
+        padding-top: 100px;
+    }
+    #home header .banner-separator {
+        height: 230px;
+    }
+}
+
+/* Extra Large devices (extra large desktops, 1920px and up) */
+@media (min-width: 1921px) {
+    #home header .banner-separator {
+        height: 340px;
+    }
+}
+
+/* SKILLS */
+#other-skills {
+    background: #f5f5f5;
+    padding: 30px 0;
+}
+
+#other-skills ul {
+    text-align: center;
+    list-style: none;
+}
+
+#other-skills li {
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+#other-skills li figure img {
+    height: 50px;
+    width: 50px;
+    background-color: #f5f5f5;
+    -webkit-transition: ease-out .15s;
+    -moz-transition: ease-out .15s;
+    -ms-transition: ease-out .15s;
+    -o-transition: ease-out .15s;
+    transition: ease-out .15s;
+}
+
+#other-skills li figure figcaption a {
+    font-style: italic;
+    font-size: 10px;
+    color: #555;
+}
+
+#other-skills li figure figcaption a:hover {
+    color: #4ebaba;
+    text-decoration: none;
+}
+
+#other-skills li figure img:focus,
+#other-skills li figure img:hover {
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    -webkit-filter: none;
+    filter: none;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #other-skills li figure img {
+        height: 100px;
+        width: 100px;
+    }
+    #other-skills li figure figcaption {
+        font-size: 14px;
+    }
+    #other-skills li {
+        margin: 20px 20px;
+    }
+}
+
+/* PORTFOLIO */
+#portfolio {
+    background: #27272b url("/images/_node-top.png");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: 1280px 120px;
+}
+
+#portfolio .thumbnail .caption {
+    text-align: center;
+}
+
+#contributions {
+    min-height: 320px;
+    background: url("/images/_node-bottom.png") no-repeat 50% 0;
+    background-color: #27272b;
+    padding: 0 0 50px;
+    color: #fff;
+    position: relative;
+    background-size: 1600px 344px;
+    margin-bottom: -50px;
+}

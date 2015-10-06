@@ -1,0 +1,45 @@
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1200px) {
+    #navbar li a span.shrink {
+        display: none;
+    }
+}
+
+#navbar li.accounts {
+    margin: 0 15px;
+}
+
+.navbar-btn {
+    color: #ffffff !important;
+    background-color: #0F60FF !important;
+    border-color: #001134 !important;
+}
+
+.navbar-btn:hover {
+    background-color: #003399 !important;
+    border-color: #000000 !important;
+}
+
+.navbar-brand > img {
+    display: inline;
+    height: 50px;
+    margin-top: -15px;
+}
+
+.nav > li {
+    text-align: center;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .nav > li {
+        text-align: left;
+    }
+    .navbar-brand > img {
+        height: 100px;
+        margin-top: -23px;
+    }
+}

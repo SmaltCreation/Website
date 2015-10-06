@@ -1,0 +1,41 @@
+// Please preserve the alphabetical order
+{
+  "template": {
+    "app": {
+      "navbar": {
+        "home": "Accueil"
+      }
+    },
+    "home": {
+      "header": {
+        "brand": "Smalt Création",
+        "title": "Développement web",
+        "subtitle": "Expert MeteorJS"
+      },
+      "page": {
+        "title": "Développement web Lyon - Expert MeteorJS",
+        "description": "Agence de développement web répondant de manière innovante aux nouvelles demandes, Smalt Création est experte en MeteorJS, Javascript en général et Symfony2."
+      },
+      "project": {
+        "crlive": {
+          "description": "Le forum permanent des associations de la Croix-rousse sur Lyon."
+        },
+        "icon": {
+          "description": "Élargissez votre réseau en rencontrant directement des contacts près de chez vous"
+        },
+        "inck": {
+          "description": "Site conceptuel cherchant à développer le marché de l'expression et de l'article libre et culturel."
+        },
+        "l7rg": {
+          "description": "Site web et plateforme principale de l'association de management de centre ville de Lyon 7."
+        },
+        "rey-freres": {
+          "description": "Entreprise familiale de mécanique générale qui a voulu booster sa réputation"
+        },
+        "tilamp": {
+          "description": "Le bon coin des artisans, professionels du bâtiment, de l'habitat et des travaux extérieurs."
+        }
+      }
+    }
+  }
+}

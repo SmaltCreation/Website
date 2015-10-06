@@ -1,0 +1,68 @@
+<template name="home">
+    <div id="home">
+        <header>
+            <div class="container-fluid">
+                <h1 class="brand">{{_ 'template.home.header.brand'}}</h1>
+                <h2>
+                    {{_ 'template.home.header.title'}}
+                    <small>
+                        <a href="https://www.meteor.com/" target="_blank">{{_ 'template.home.header.subtitle'}}</a>
+                    </small>
+                </h2>
+            </div>
+            <div class="banner-separator"></div>
+        </header>
+        <section id="skills">
+            <div class="container">
+
+            </div>
+        </section>
+        <div id="other-skills">
+            <ul class="container">
+                {{#each skills}}
+                    <li>
+                        <figure>
+                            <img class="img-circle img-thumbnail grey-scale" src="{{img}}" alt="{{name}}">
+                            <figcaption>
+                                <a href="{{url}}" target="_blank">{{name}}</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+        <section id="portfolio">
+            <div class="container">
+                {{#with gallery}}
+                    <div id="gallery">
+                        {{#each projects}}
+                            <div class="grid-item thumbnail">
+                                <a href="{{pathFor 'projectShow' id=id slug=slug}}"
+                                data-id="{{id}}"
+                                data-name="{{name}}"
+                                data-importance="{{importance}}"
+                                class="{{#each technologies}}technology-{{id}}-{{slug}} {{/each}}">
+                                    <img src="{{img}}" alt="{{name}}">
+                                </a>
+                                <div class="caption">
+                                    <h4>{{name}}</h4>
+                                    <p>{{_ description}}</p>
+                                </div>
+                            </div>
+
+                        {{/each}}
+                    </div>
+                {{/with}}
+            </div>
+            <div id="contributions">
+
+            </div>
+        </section>
+        <section id="services">
+
+        </section>
+        <section id="contact">
+
+        </section>
+    </div>
+</template>

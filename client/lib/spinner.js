@@ -1,0 +1,20 @@
+Meteor.Spinner.options = {
+    lines: 13,
+    length: 10,
+    width: 5,
+    radius: 42,
+    corners: 1,
+    opacity: 0.20,
+    rotate: 18,
+    direction: 1,
+    color: '#333',
+    speed: 1,
+    trail: 42,
+    shadow: false,
+    hwaccel: false,
+    className: 'spinner',
+    zIndex: 2e9,
+    top: '200px',
+    left: '50%',
+    position: 'absolute'
+};
