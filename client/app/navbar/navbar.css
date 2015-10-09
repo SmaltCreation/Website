@@ -1,8 +1,9 @@
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 1200px) {
-    #navbar li a span.shrink {
-        display: none;
-    }
+#navbar {
+    -webkit-transition: ease-out .5s;
+    -moz-transition: ease-out .5s;
+    -ms-transition: ease-out .5s;
+    -o-transition: ease-out .5s;
+    transition: ease-out .5s;
 }
 
 #navbar li.accounts {
@@ -20,10 +21,41 @@
     border-color: #000000 !important;
 }
 
-.navbar-brand > img {
+#navbar .navbar-brand img {
     display: inline;
     height: 50px;
     margin-top: -15px;
+    -webkit-transition: ease-out .3s;
+    -moz-transition: ease-out .3s;
+    -ms-transition: ease-out .3s;
+    -o-transition: ease-out .3s;
+    transition: ease-out .3s;
+}
+
+#navbar.on-top {
+    background-color: rgba(0, 0, 0, 0.95);
+    border-color: rgba(0, 0, 0, 0.95);
+}
+
+#navbar.on-top .navbar-collapse, #navbar.on-top .navbar-form {
+    border-color: rgba(51, 51, 51, 0.95);
+}
+
+#navbar.on-top .navbar-nav > li > a {
+    color: #dddddd;
+}
+
+#navbar.on-top .navbar-nav > li > a:hover {
+    color: #fff;
+}
+
+#navbar.on-top .navbar-toggle {
+    border-color: #333333;
+}
+
+#navbar.on-top .navbar-toggle:hover,
+#navbar.on-top .navbar-toggle:focus {
+    background-color: #333333;
 }
 
 .nav > li {
@@ -38,8 +70,18 @@
     .nav > li {
         text-align: left;
     }
-    .navbar-brand > img {
+    #navbar.on-top .navbar-brand img {
+        display: inline-block;
         height: 100px;
         margin-top: -23px;
+        background-color: transparent;
+        color: #ffffff;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1200px) {
+    #navbar li a span.shrink {
+        display: none;
     }
 }

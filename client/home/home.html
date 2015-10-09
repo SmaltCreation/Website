@@ -1,23 +1,112 @@
 <template name="home">
     <div id="home">
         <header>
-            <div class="container-fluid">
+            <div class="container">
                 <h1 class="brand">{{_ 'template.home.header.brand'}}</h1>
-                <h2>
-                    {{_ 'template.home.header.title'}}
-                    <small>
-                        <a href="https://www.meteor.com/" target="_blank">{{_ 'template.home.header.subtitle'}}</a>
-                    </small>
-                </h2>
+                <p>{{{_ 'template.home.header.text'}}}</p>
             </div>
             <div class="banner-separator"></div>
         </header>
-        <section id="skills">
+        <section id="description">
             <div class="container">
-
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="media">
+                            <div class="media-left hidden-xs">
+                                <i class="fa fa-laptop"></i>
+                            </div>
+                            <div class="media-body">
+                                <h2 class="media-heading">
+                                    <i class="fa fa-laptop visible-xs-inline hidden-sm hidden-md hidden-lg"></i>
+                                    {{_ 'template.home.description.media.project.title'}}
+                                </h2>
+                                <p class="text-muted">
+                                    {{_ 'template.home.description.media.project.text'}}
+                                </p>
+                                <p>
+                                    <a href="#contact">
+                                        {{_ 'template.home.description.media.project.link'}}
+                                        <i class="fa fa-chevron-right"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="media">
+                            <div class="media-body">
+                                <h2 class="media-heading">
+                                    <i class="fa fa-lightbulb-o"></i>
+                                    {{_ 'template.home.description.media.idea.title'}}
+                                </h2>
+                                <p class="text-muted">
+                                    {{_ 'template.home.description.media.idea.text'}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <div id="other-skills">
+        <section id="services">
+            <div class="container">
+                <div class="row the-whole-package">
+                    <div class="col-sm-4">
+                        <div class=" box grey left">
+                            <h4 class="service-heading">
+                                <i class="fa fa-server"></i>
+                                {{_ 'template.home.services.box.hosting.title'}}
+                            </h4>
+                            <p>
+                                {{_ 'template.home.services.box.hosting.text'}}
+                            </p>
+                            <p>
+                                <a href="#">
+                                    {{_ 'template.home.services.box.hosting.link'}}
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class=" box center">
+                            <h4 class="service-heading">
+                                <i class="fa fa-code"></i>
+                                {{_ 'template.home.services.box.developement.title'}}
+                            </h4>
+                            <p>
+                                {{{_ 'template.home.services.box.developement.text'}}}
+                            </p>
+                            <p>
+                                <a href="#">
+                                    {{_ 'template.home.services.box.developement.link'}}
+                                    <i class="fa fa-question-circle"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="box grey right">
+                            <h4 class="service-heading">
+                                <i class="fa fa-support"></i>
+                                {{_ 'template.home.services.box.support.title'}}
+                            </h4>
+                            <p>
+                                {{_ 'template.home.services.box.support.text'}}
+                            </p>
+                            <p>
+                                <a href="#">
+                                    {{_ 'template.home.services.box.support.link'}}
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{> cloudsSvg}}
+        </section>
+        <section id="skills">
             <ul class="container">
                 {{#each skills}}
                     <li>
@@ -30,7 +119,18 @@
                     </li>
                 {{/each}}
             </ul>
-        </div>
+        </section>
+        <section id="consulting">
+            <div class="container text-center">
+                <h3>
+                    {{_ 'template.home.consulting.title'}}
+                </h3>
+                <p>
+                    <i class="fa fa-fw fa-graduation-cap"></i>
+                    {{_ 'template.home.consulting.text'}}
+                </p>
+            </div>
+        </section>
         <section id="portfolio">
             <div class="container">
                 {{#with gallery}}
@@ -58,8 +158,13 @@
 
             </div>
         </section>
-        <section id="services">
-
+        <section id="why-meteor">
+            <div class="container text-center">
+                <h3>Pourquoi choisir MeteorJS ?</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend urna sit amet leo fringilla vehicula. Maecenas dictum auctor mauris, et tristique lorem laoreet eu. Maecenas iaculis dui id neque semper volutpat. Proin ac dignissim purus, ut malesuada quam. Praesent eget tellus sit amet ligula semper accumsan at ut odio. Pellentesque id urna turpis. Morbi vitae ex arcu. Praesent at tempor massa. Sed iaculis erat eget congue condimentum. Duis vulputate porttitor vehicula. Praesent sit amet laoreet tellus, a efficitur erat. Aenean imperdiet egestas ex non ultricies. Donec ac dolor id sem feugiat rhoncus. In tempor dignissim eros, vitae aliquet nunc finibus non.
+                </p>
+            </div>
         </section>
         <section id="contact">
 

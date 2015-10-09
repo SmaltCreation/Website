@@ -8,3 +8,10 @@ Template.navbar.events({
         }
     }
 });
+
+Template.navbar.onRendered(function () {
+    $(window).on('scroll', function() {
+        var navbar = $('#navbar');
+        navbar.toggleClass('on-top', navbar.offset().top == 0);
+    });
+});
