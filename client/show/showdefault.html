@@ -1,0 +1,38 @@
+<template name="showdefault">
+    <div id="default">
+        <header>
+            <div class="banner">
+                <a href="{{project.url}}" target="_blank"><img src="{{ project.img }}"></a>
+                <h1 class="brand">{{ project.name }}</h1>
+                <h2><small>
+                    <a href="{{project.url}}" target="_blank">{{project.url}}</a>
+                </small></h2>
+            </div>
+
+        </header>
+        <section id="show">
+            <div id="other-skills">
+                <ul class="container">
+                    {{#each technologies}}
+                        <li>
+                            <figure>
+                                <img class="img-circle img-thumbnail grey-scale" src="{{img}}" alt="{{name}}">
+                                <figcaption>
+                                    <a href="{{url}}" target="_blank">{{name}}</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </section>
+        <section id="description">
+            <div class="container">
+                <p>{{_ project.description}}</p>
+            </div>
+            <div id="pagebot">
+
+            </div>
+        </section>
+    </div>
+</template>
