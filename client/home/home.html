@@ -11,7 +11,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8">
-                        <div class="media">
+                        <div class="media main">
                             <div class="media-left hidden-xs">
                                 <i class="fa fa-laptop"></i>
                             </div>
@@ -122,34 +122,69 @@
         </section>
         <section id="consulting">
             <div class="container text-center">
-                <h3>
+                <h4>
                     {{_ 'template.home.consulting.title'}}
-                </h3>
+                </h4>
                 <p>
                     <i class="fa fa-fw fa-graduation-cap"></i>
                     {{_ 'template.home.consulting.text'}}
+                </p>
+                <p>
+                    <a href="#" class="btn btn-danger">
+                        <i class="fa fa-envelope-o"></i>
+                        Nous contacter
+                    </a>
                 </p>
             </div>
         </section>
         <section id="portfolio">
             <div class="container">
+                <h3>
+                    <i class="fa fa-flask"></i>
+                    Nos réalisations
+                    <span class="sorts-container">
+                        <span class="btn-group" role="group" aria-label="sort">
+                            <button type="button" class="btn btn-info btn-xs sort" data-sort-by="name">
+                                <i class="fa fa-sort"></i>
+                                Nom
+                            </button>
+                            <button type="button" class="btn btn-info btn-xs sort is-sorted" data-sort-by="importance">
+                                <i class="fa fa-sort"></i>
+                                Importance
+                            </button>
+                        </span>
+                    </span>
+                </h3>
+                <p>Vous trouverez les projets que nous avons réalisés et que nous maintenons. N'hésitez pas à les trier par nom, importance ou technologie.</p>
                 {{#with gallery}}
+                    <div class="filters-container">
+                        {{#each skills}}
+                            <button type="button" class="btn btn-default btn-xs filter" data-filter=".{{slug}}">
+                                <i class="fa fa-filter"></i>
+                                {{name}}
+                                <i class="fa fa-times hidden"></i>
+                            </button>
+                        {{/each}}
+                    </div>
                     <div id="gallery">
                         {{#each projects}}
-                            <div class="grid-item thumbnail">
-                                <a href="{{pathFor 'projectShow' id=id slug=slug}}"
-                                data-id="{{id}}"
-                                data-name="{{name}}"
-                                data-importance="{{importance}}"
-                                class="{{#each technologies}}technology-{{id}}-{{slug}} {{/each}}">
+                            <div class="grid-item thumbnail{{#each technologies}} {{this}}{{/each}}"
+                                 data-id="{{id}}"
+                                 data-name="{{name}}"
+                                 data-importance="{{importance}}">
+                                <a href="{{pathFor 'projectShow' id=id slug=slug}}" class="preview">
                                     <img src="{{img}}" alt="{{name}}">
                                 </a>
                                 <div class="caption">
-                                    <h4>{{name}}</h4>
-                                    <p>{{_ description}}</p>
+                                    <h4>
+                                        <a href="{{url}}" class="name" target="_blank">
+                                            <i class="fa fa-external-link-square"></i>
+                                            {{name}}
+                                        </a>
+                                    </h4>
+                                    <p class="text-muted">{{_ description}}</p>
                                 </div>
                             </div>
-
                         {{/each}}
                     </div>
                 {{/with}}

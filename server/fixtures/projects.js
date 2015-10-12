@@ -112,11 +112,10 @@ projectsFixtures = [
         portfolio: true,
         draft: false,
         technologies: [
-            technologiesFixtures.bootstrap.id,
-            technologiesFixtures.googleMaps.id,
-            technologiesFixtures.nginx.id,
-            technologiesFixtures.symfony2.id,
-            technologiesFixtures.ubuntuServer.id
+            technologiesFixtures.bootstrap.slug,
+            technologiesFixtures.nginx.slug,
+            technologiesFixtures.symfony2.slug,
+            technologiesFixtures.ubuntuServer.slug
         ]
     }, {
         id: 2,
@@ -124,12 +123,12 @@ projectsFixtures = [
         name: 'Lyon 7 Rive Gauche',
         description: 'template.home.project.l7rg.description',
         img: '/images/project-l7rg360x203.png',
-        url: 'http://www.lyon7rivegauche.fr',
+        url: 'http://www.lyon7rivegauche.com',
         importance: 4,
         portfolio: true,
         draft: false,
         technologies: [
-            technologiesFixtures.wordpress.id
+            technologiesFixtures.wordpress.slug
         ]
     }, {
         id: 3,
@@ -142,7 +141,7 @@ projectsFixtures = [
         portfolio: true,
         draft: false,
         technologies: [
-            technologiesFixtures.wordpress.id
+            technologiesFixtures.wordpress.slug
         ]
     }, {
         id: 4,
@@ -155,7 +154,7 @@ projectsFixtures = [
         portfolio: true,
         draft: false,
         technologies: [
-            technologiesFixtures.wordpress.id
+            technologiesFixtures.wordpress.slug
         ]
     },{
         id: 6,
@@ -168,13 +167,14 @@ projectsFixtures = [
         portfolio: true,
         draft: false,
         technologies: [
-            technologiesFixtures.bootstrap.id,
-            technologiesFixtures.googleMaps.id,
-            technologiesFixtures.javaScript.id,
-            technologiesFixtures.mongoDB.id,
-            technologiesFixtures.nexmo.id,
-            technologiesFixtures.stripe.id,
-            technologiesFixtures.ubuntuServer.id
+            technologiesFixtures.bootstrap.slug,
+            technologiesFixtures.googleMaps.slug,
+            technologiesFixtures.javaScript.slug,
+            technologiesFixtures.meteor.slug,
+            technologiesFixtures.mongoDB.slug,
+            technologiesFixtures.nexmo.slug,
+            technologiesFixtures.stripe.slug,
+            technologiesFixtures.ubuntuServer.slug
         ]
     }, {
         id: 7,
@@ -187,13 +187,14 @@ projectsFixtures = [
         portfolio: true,
         draft: false,
         technologies: [
-            technologiesFixtures.bootstrap.id,
-            technologiesFixtures.googleMaps.id,
-            technologiesFixtures.javaScript.id,
-            technologiesFixtures.mongoDB.id,
-            technologiesFixtures.nexmo.id,
-            technologiesFixtures.stripe.id,
-            technologiesFixtures.ubuntuServer.id
+            technologiesFixtures.bootstrap.slug,
+            technologiesFixtures.googleMaps.slug,
+            technologiesFixtures.javaScript.slug,
+            technologiesFixtures.meteor.slug,
+            technologiesFixtures.mongoDB.slug,
+            technologiesFixtures.nexmo.slug,
+            technologiesFixtures.stripe.slug,
+            technologiesFixtures.ubuntuServer.slug
         ]
     }
 ];

@@ -8,19 +8,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="{{pathFor 'home'}}" class="navbar-brand">
+                <a href="{{pathFor 'home'}}#" class="navbar-brand">
                     <img alt="Brand" src="/images/navbar-brand.png">
                 </a>
             </div>
 
             <div id="navbar-collapse" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a href="{{pathFor 'home'}}">
-                            <i class="fa fa-home" data-toggle="tooltip" data-placement="left" title="{{_ 'template.app.navbar.home'}}"></i>
-                            <span class="shrink">{{_ 'template.app.navbar.home'}}</span>
-                        </a>
-                    </li>
                     <li>
                         <a href="{{pathFor 'home'}}#services">
                             <i class="fa fa-certificate" data-toggle="tooltip" data-placement="left" title="{{_ 'template.app.navbar.services'}}"></i>

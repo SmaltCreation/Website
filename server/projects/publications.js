@@ -7,7 +7,7 @@ Meteor.publishComposite('projects-portfolio', function () {
         children: [
             {
                 find: function (project) {
-                    var view = Technologies.views.list(project.technologies);
+                    var view = Technologies.views.listBySlug(project.technologies);
                     return Technologies.find(view.selector, view.options);
                 }
             }
