@@ -3,37 +3,78 @@
   "template": {
     "app": {
       "navbar": {
-        "home": "Accueil"
+        "home": "Accueil",
+        "company": "L'entreprise",
+        "contact": "Nous contacter",
+        "projects": "Nos réalisations",
+        "services": "Nos services",
+        "skills": "Nos compétences",
+        "why-meteor": "Pourquoi MeteorJS"
       }
     },
     "home": {
+      "consulting": {
+        "title": "Besoin de conseils, de formations sur ces technologies ?",
+        "text": "Nos intervenants sont formés pédagogiquement pour gérer des groupes et dispenser d'une formation de qualité."
+      },
+      "description": {
+        "media": {
+          "project": {
+            "title": "Réaliser votre projet avec Smalt",
+            "text": "Smalt réalise des projets de très différentes envergures. Que vous soyez entrepreneur, artisan ou représentant d'une grande entreprise, nous savons nous adapter à votre demande, votre rythme et vos objectifs.",
+            "link": "Nous contacter"
+          },
+          "idea": {
+            "title": "Une idée en tête ?",
+            "text": "Dans la plus part des cas, nos clients viennent avec une ou plusieurs idées en tête. Nous les aidons à les réaliser en choisissant les technologies, les hébergements, les supports les plus adaptés à leurs besoins."
+          }
+        }
+      },
       "header": {
         "brand": "Smalt Création",
-        "title": "Développement web",
-        "subtitle": "Expert MeteorJS"
+        "text": "Agence web et start-up basée sur Lyon, Smalt une société spécialisée dans les <strong>technologies émergentes</strong>.<span class=hidden-xs><br>L'informatique évoluant, nous développons des applications performantes et attractives dans un esprit collaboratif et professionnel.</span>"
       },
       "page": {
         "title": "Développement web Lyon - Expert MeteorJS",
-        "description": "Agence de développement web répondant de manière innovante aux nouvelles demandes, Smalt Création est experte en MeteorJS, Javascript en général et Symfony2."
+        "description": "Agence de développement web répondant de manière innovante aux nouvelles demandes, Smalt Création travaille sur MeteorJS, Javascript en général et Symfony2."
       },
       "project": {
         "crlive": {
           "description": "Le forum permanent des associations de la Croix-rousse sur Lyon."
         },
         "icon": {
-          "description": "Élargissez votre réseau en rencontrant directement des contacts près de chez vous"
+          "description": "Élargissez votre réseau en rencontrant directement des contacts près de chez vous. Élargissez votre réseau en rencontrant directement des contacts près de chez vous."
         },
         "inck": {
           "description": "Site conceptuel cherchant à développer le marché de l'expression et de l'article libre et culturel."
         },
         "l7rg": {
-          "description": "Site web et plateforme principale de l'association de management de centre ville de Lyon 7."
+          "description": "Site web et plateforme principale de l'association de management de centre ville de Lyon 7. Élargissez votre réseau en rencontrant directement des contacts près de chez vous."
         },
         "rey-freres": {
-          "description": "Entreprise familiale de mécanique générale qui a voulu booster sa réputation"
+          "description": "Entreprise familiale de mécanique générale qui a voulu booster sa réputation."
         },
         "tilamp": {
           "description": "Le bon coin des artisans, professionels du bâtiment, de l'habitat et des travaux extérieurs."
+        }
+      },
+      "services": {
+        "box": {
+          "developement": {
+            "title": "Développement",
+            "text": "Nous utilisons des technologies performantes et innovantes afin de proposer des applications toujours dans l'aire du temps. Connaissez-vous peut-être <a href=\"http://meteor.com\">MeteorJS</a> ou <a href=\"http://symfony.com\">Symfony2</a> ?",
+            "link": "Comment ça marche"
+          },
+          "hosting": {
+            "title": "Hébergement",
+            "text": "Nous fournissons des solutions d'hébergements adaptées à vos besoins. De l'installation du système à la mise en production de votre site, nous nous chargeons de tout.",
+            "link": "Nos offres d'hébergements"
+          },
+          "support": {
+            "title": "Support",
+            "text": "Lorsque nous nous occupons d'un projet, nous aimons qu'il soit au top de sa forme. Nous proposons donc des solutions de support adaptées à votre demande.",
+            "link": "Détails du support"
+          }
         }
       }
     }

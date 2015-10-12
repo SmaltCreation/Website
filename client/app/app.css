@@ -1,11 +1,6 @@
-/* General */
-body {
-    padding-top: 50px;
-}
-
 /* Bootstrap */
-
 .jumbotron {
+    padding-top: 50px;
     text-align: center;
     color: #ffffff;
     background: #27272b;
@@ -87,22 +82,24 @@ section:not(:last-child) {
 .pictured .title {
     text-align: left;
     font-size: 30px;
+    margin-top: 0;
 }
 
-.pictured img.picture {
+.pictured .picture {
     display: block;
     width: 20%;
     float: left;
     margin: 0 30px 15px 0;
 }
 
-.pictured img.picture.picture-right {
+.pictured .picture.picture-right {
     float: right;
     margin: 0 0 15px 30px;
 }
 
+
 @media screen and (max-width: 991px) {
-    .pictured img.picture {
+    .pictured .picture {
         width: 33%;
     }
     .pictured .title {

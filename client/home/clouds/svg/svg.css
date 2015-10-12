@@ -1,0 +1,17 @@
+#clouds-svg {
+    margin-bottom: -7px;
+    background-color: transparent;
+    height: 50px;
+}
+
+#clouds-svg path {
+    fill: #f5f5f5;
+    stroke: #f5f5f5;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #clouds-svg {
+        height: 100px;
+    }
+}
