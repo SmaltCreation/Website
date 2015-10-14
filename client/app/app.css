@@ -1,3 +1,11 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 /* Bootstrap */
 .jumbotron {
     padding-top: 50px;
@@ -22,20 +30,62 @@
 
 /* Section */
 section {
-    padding-top: 25px;
+    padding: 50px 0;
 }
 
-section:not(:last-child) {
-    padding-bottom: 25px;
+section::before,
+section::after {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+}
+
+.section-title {
+    margin-top: 0;
+    text-transform: uppercase;
+    position: relative;
+    display: table;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.section-title:before,
+.section-title:after {
+    display: table-cell;
+    content: '';
+    width: 45%;
+    border-top: 1px solid #555;
+    position: relative;
+    top: 7px;
+}
+
+.section-title.inverse {
+    color: #ffffff;
+}
+
+.section-title.inverse:before,
+.section-title.inverse:after {
+    border-top: 1px solid #cccccc;
+}
+
+.section-title:before {
+    right: 10px;
+}
+
+.section-title:after {
+    left: 10px;
 }
 
 @media screen and (min-width: 992px) {
     section {
-        padding-top: 50px;
+        padding: 75px 0;
     }
-
-    section:not(:last-child) {
-        padding-bottom: 50px;
+    .section-title {
+        font-size: 20px;
     }
 }
 
@@ -166,7 +216,7 @@ section:not(:last-child) {
 
 /* Text louded */
 .text-louded {
-    color: #1159E7;
+    color: #1159e7;
     letter-spacing: 0.8px;
     font-size: 16px;
 }

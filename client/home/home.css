@@ -120,6 +120,7 @@
     text-align: left;
     font-size: 20px;
     margin-top: 0;
+    color: #003399;
 }
 
 #description .media .media-left i {
@@ -143,6 +144,7 @@
     background: url("/images/_bg-piece-io.jpg");
     background-size: 50%;
     padding-bottom: 0;
+    padding-top: 20px;
 }
 
 #services .the-whole-package {
@@ -205,15 +207,10 @@
     }
 }
 
-/* WHY METEOR */
-#why-meteor {
-    background: url("/images/_tesselate.svg");
-    background-size: 250px;
-}
-
 /* SKILLS */
 #skills {
     background: #f5f5f5;
+    padding-top: 25px;
 }
 
 #skills ul {
@@ -229,7 +226,7 @@
 #skills li figure img {
     height: 50px;
     width: 50px;
-    background-color: #f5f5f5;
+    background-color: #fff;
     -webkit-transition: ease-out .15s;
     -moz-transition: ease-out .15s;
     -ms-transition: ease-out .15s;
@@ -244,7 +241,7 @@
 }
 
 #skills li figure figcaption a:hover {
-    color: #4ebaba;
+    color: #8567f4;
     text-decoration: none;
 }
 
@@ -276,6 +273,12 @@
     }
 }
 
+@media (min-width: 992px) {
+    #skills {
+        padding-top: 50px;
+    }
+}
+
 /* CONSULTING */
 #consulting {
     background: #555;
@@ -284,19 +287,8 @@
     color: #f5f5f5;
 }
 
-#consulting h4 {
-    margin-top: 0;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
 #consulting p:last-of-type {
     margin-bottom: 0;
-}
-
-#consulting h3 {
-    margin-top: 0;
-    color: #ffffff;
 }
 
 /* PORTFOLIO */
@@ -306,6 +298,10 @@
     background-position: 50% 0;
     background-repeat: no-repeat;
     background-size: 1280px 120px;
+}
+
+#portfolio h3 {
+    margin-top: 0;
 }
 
 #portfolio .filters-container {
@@ -358,12 +354,80 @@
 }
 
 #contributions {
+    margin-top: 50px;
     min-height: 320px;
     background: url("/images/_node-bottom.png") no-repeat 50% 0;
+    background-position: bottom;
     background-color: #27272b;
     padding: 0 0 50px;
     color: #fff;
     position: relative;
     background-size: 1600px 344px;
     margin-bottom: -50px;
+}
+
+@media (min-width: 992px) {
+    #contributions {
+        margin-bottom: -75px;
+    }
+}
+
+/* WHY METEOR */
+#why-meteor {
+    background: #555;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    color: #f5f5f5;
+}
+
+#why-meteor p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* MAP */
+#home #map iframe {
+    height: 100%;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+    #home #map {
+        height: 200px;
+    }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    #home #map {
+        height: 200px;
+    }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #home #map {
+        height: 250px;
+    }
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #home #map {
+        height: 300px;
+    }
+}
+
+/* CONTACT */
+#contact {
+    background: #27272b url("/images/_map-image.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+
+@media (min-width: 992px) {
+    #contact {
+        background-size: 60%;
+        padding: 100px 0;
+    }
 }

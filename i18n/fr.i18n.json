@@ -14,14 +14,14 @@
     },
     "home": {
       "consulting": {
-        "title": "Besoin de conseils, de formations sur ces technologies ?",
+        "title": "Besoin de conseils, de formations ?",
         "text": "Nos intervenants sont formés pédagogiquement pour gérer des groupes et dispenser d'une formation de qualité."
       },
       "description": {
         "media": {
           "project": {
             "title": "Réaliser votre projet avec Smalt",
-            "text": "Smalt réalise des projets de très différentes envergures. Que vous soyez entrepreneur, artisan ou représentant d'une grande entreprise, nous savons nous adapter à votre demande, votre rythme et vos objectifs.",
+            "text": "Smalt réalise des projets de différentes envergures. Que vous soyez entrepreneur, artisan ou représentant d'une grande entreprise, nous savons nous adapter à votre demande, votre rythme et vos objectifs.",
             "link": "Nous contacter"
           },
           "idea": {
@@ -32,7 +32,7 @@
       },
       "header": {
         "brand": "Smalt Création",
-        "text": "Agence web et start-up basée sur Lyon, Smalt une société spécialisée dans les <strong>technologies émergentes</strong>.<span class=hidden-xs><br>L'informatique évoluant, nous développons des applications performantes et attractives dans un esprit collaboratif et professionnel.</span>"
+        "text": "Agence web et start-up basée sur Lyon, Smalt est une société spécialisée dans le <strong>développement de sites et d'applications</strong>.<span class=hidden-sm><br>L'informatique évoluant, nous développons des applications performantes et attractives dans un esprit collaboratif et professionnel.</span>"
       },
       "page": {
         "title": "Développement web Lyon - Expert MeteorJS",
@@ -43,13 +43,13 @@
           "description": "Le forum permanent des associations de la Croix-rousse sur Lyon."
         },
         "icon": {
-          "description": "Élargissez votre réseau en rencontrant directement des contacts près de chez vous. Élargissez votre réseau en rencontrant directement des contacts près de chez vous."
+          "description": "Élargissez votre réseau en rencontrant directement des contacts près de chez vous."
         },
         "inck": {
           "description": "Site conceptuel cherchant à développer le marché de l'expression et de l'article libre et culturel."
         },
         "l7rg": {
-          "description": "Site web et plateforme principale de l'association de management de centre ville de Lyon 7. Élargissez votre réseau en rencontrant directement des contacts près de chez vous."
+          "description": "Site web et plateforme principale de l'association de management de centre ville de Lyon 7."
         },
         "rey-freres": {
           "description": "Entreprise familiale de mécanique générale qui a voulu booster sa réputation."
