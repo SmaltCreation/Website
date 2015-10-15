@@ -1,15 +1,54 @@
-// Please preserve the alphabetical order
+// Please preserve the alphabetical order for templates
 {
+  "project": {
+    "crlive": {
+      "description": "Le forum permanent des associations de la Croix-rousse sur Lyon."
+    },
+    "icon": {
+      "description": "Élargissez votre réseau en rencontrant directement des contacts près de chez vous."
+    },
+    "inck": {
+      "description": "Site conceptuel cherchant à développer le marché de l'expression et de l'article libre et culturel."
+    },
+    "l7rg": {
+      "description": "Site web et plateforme principale de l'association de management de centre ville de Lyon 7."
+    },
+    "rey-freres": {
+      "description": "Entreprise familiale de mécanique générale qui a voulu booster sa réputation."
+    },
+    "tilamp": {
+      "description": "Le bon coin des artisans, professionels du bâtiment, de l'habitat et des travaux extérieurs."
+    }
+  },
   "schema": {
     "contact": {
       "name": {
         "label": "Nom",
-        "placeholder": "Anakin Skywalker"
+        "placeholder": "Votre nom et prénom *"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Votre adresse email *"
+      },
+      "subject": {
+        "label": "Objet",
+        "placeholder": "Objet du message *"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Contenu du message *"
       }
     }
   },
   "template": {
     "app": {
+      "contact": {
+        "alert": {
+          "title": "Message envoyé avec succès !",
+          "text": "Votre message nous a bien été transmis. À très bientôt."
+        },
+        "button": "Envoyer votre message"
+      },
       "navbar": {
         "home": "Accueil",
         "company": "L'entreprise",
@@ -21,9 +60,13 @@
       }
     },
     "home": {
+      "contact": {
+        "title": "<i class=\"fa fa-envelope\"></i> Nous contacter"
+      },
       "consulting": {
         "title": "Besoin de conseils, de formations ?",
-        "text": "Nos intervenants sont formés pédagogiquement pour gérer des groupes et dispenser d'une formation de qualité."
+        "text": "Nos intervenants sont formés pédagogiquement pour gérer des groupes et dispenser d'une formation de qualité.",
+        "button": "Nous contacter"
       },
       "description": {
         "media": {
@@ -46,24 +89,14 @@
         "title": "Développement web Lyon - Expert MeteorJS",
         "description": "Agence de développement web répondant de manière innovante aux nouvelles demandes, Smalt Création travaille sur MeteorJS, Javascript en général et Symfony2."
       },
-      "project": {
-        "crlive": {
-          "description": "Le forum permanent des associations de la Croix-rousse sur Lyon."
-        },
-        "icon": {
-          "description": "Élargissez votre réseau en rencontrant directement des contacts près de chez vous."
-        },
-        "inck": {
-          "description": "Site conceptuel cherchant à développer le marché de l'expression et de l'article libre et culturel."
-        },
-        "l7rg": {
-          "description": "Site web et plateforme principale de l'association de management de centre ville de Lyon 7."
-        },
-        "rey-freres": {
-          "description": "Entreprise familiale de mécanique générale qui a voulu booster sa réputation."
-        },
-        "tilamp": {
-          "description": "Le bon coin des artisans, professionels du bâtiment, de l'habitat et des travaux extérieurs."
+      "portfolio": {
+        "title": "Nos réalisations",
+        "text": "Vous trouverez les projets que nous avons réalisés et que nous maintenons. N'hésitez pas à les trier par nom, taille ou technologie.",
+        "actions": {
+          "sort": {
+            "name": "Nom",
+            "importance": "Taille"
+          }
         }
       },
       "services": {
@@ -83,6 +116,16 @@
             "text": "Lorsque nous nous occupons d'un projet, nous aimons qu'il soit au top de sa forme. Nous proposons donc des solutions de support adaptées à votre demande.",
             "link": "Détails du support"
           }
+        }
+      },
+      "why": {
+        "meteor": {
+          "title": "<i class=\"fa fa-commenting\"></i> Pourquoi choisir MeteorJS ?",
+          "texts": {
+            "description": "<strong>Framework entièrement JavaScript, MeteorJS est une de nos technologies phares.</strong> Rapide, flexible, performant, ce framework possède tous les avantages pour créer une application web, c'est pourquoi Meteor est actuellement un acteur majeur du développement JavaScript.<br> Chez Smalt, nous reconnaissons le potentiel de certaines technologies, c'est pourquoi nous sommes <strong>une des premières agences web</strong> à travailler avec <strong>Meteor</strong>.",
+            "modern": " <strong><i class=\"fa fa-star\"></i> Un gage de modernité.</strong>Le marché de l'IT est aujourd'hui très concurentiel. Meteor apporte un gage de modernité à vos projetsqui se démarqueront du flot d'applications qui sortent tous les jours."
+          },
+          "button": "Tester Meteor"
         }
       }
     }

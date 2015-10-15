@@ -40,3 +40,5 @@ aldeed:autoform
 smaltcreation:autoform-input-addon-icon
 smaltcreation:autoform-intl-tel-input
 aldeed:simple-schema
+gwendall:simple-schema-i18n
+gwendall:autoform-i18n

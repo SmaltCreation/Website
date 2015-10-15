@@ -1,4 +1,4 @@
-Template.home.helpers({
+Template.homePortfolio.helpers({
     skills: function () {
         var view = Technologies.views.skills();
         return Technologies.find(view.selector, view.options).fetch();
@@ -11,7 +11,7 @@ Template.home.helpers({
     }
 });
 
-Template.home.onRendered(function () {
+Template.homePortfolio.onRendered(function () {
     var portfolio = $('#portfolio');
 
     // Initialize grid

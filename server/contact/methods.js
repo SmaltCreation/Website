@@ -3,12 +3,12 @@ Meteor.methods({
         checkKeys(data, 'contact');
 
         var text = 'Message de : ' + data.name + '\nEmail : ' + data.email
-            + '\nTéléphone : ' + data.phone + '\nContenu : ' + data.message;
+            + '\nTÃ©lÃ©phone : ' + data.phone + '\nContenu : ' + data.message;
 
         Email.send({
             to: Meteor.settings.CONTACT.SEND_TO,
             from: data.email,
-            subject: 'Nouveau message de Smalt Création',
+            subject: 'Nouveau message de smaltcreation.com',
             text: text
         });
 

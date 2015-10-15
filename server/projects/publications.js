@@ -15,10 +15,10 @@ Meteor.publishComposite('projects-portfolio', function () {
     }
 });
 
-Meteor.publishComposite('projects-show', function(id) {
+Meteor.publishComposite('projects-show', function(id, slug) {
     return {
         find: function () {
-            var view = Projects.views.show(id);
+            var view = Projects.views.show(id, slug);
             return Projects.find(view.selector, view.options);
         },
         children: [

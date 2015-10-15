@@ -1,0 +1,29 @@
+#home #description {
+    padding-bottom: 0;
+}
+
+#home #description .media.main {
+    margin-bottom: 15px;
+}
+
+#home #description .media .media-heading {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 0;
+    color: #003399;
+}
+
+#home #description .media .media-left i {
+    font-size: 100px;
+    margin-top: -4px;
+}
+
+@media screen and (min-width: 992px) {
+    #home #description .media .media-heading {
+        font-size: 30px;
+    }
+    #home #description .media .media-left i {
+        font-size: 200px;
+        margin-top: -14px;
+    }
+}

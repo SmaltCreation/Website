@@ -9,304 +9,50 @@
         </header>
         <section id="description">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <div class="media main">
-                            <div class="media-left hidden-xs">
-                                <i class="fa fa-laptop"></i>
-                            </div>
-                            <div class="media-body">
-                                <h2 class="media-heading">
-                                    <i class="fa fa-laptop visible-xs-inline hidden-sm hidden-md hidden-lg"></i>
-                                    {{_ 'template.home.description.media.project.title'}}
-                                </h2>
-                                <p class="text-muted">
-                                    {{_ 'template.home.description.media.project.text'}}
-                                </p>
-                                <p>
-                                    <a href="#contact">
-                                        {{_ 'template.home.description.media.project.link'}}
-                                        <i class="fa fa-chevron-right"></i>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="media">
-                            <div class="media-body">
-                                <h2 class="media-heading">
-                                    <i class="fa fa-lightbulb-o"></i>
-                                    {{_ 'template.home.description.media.idea.title'}}
-                                </h2>
-                                <p class="text-muted">
-                                    {{_ 'template.home.description.media.idea.text'}}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {{> homeDescription}}
             </div>
         </section>
         <section id="services">
             <div class="container">
-                <div class="row the-whole-package">
-                    <div class="col-sm-4">
-                        <div class=" box grey left">
-                            <h4 class="service-heading">
-                                <i class="fa fa-server"></i>
-                                {{_ 'template.home.services.box.hosting.title'}}
-                            </h4>
-                            <p>
-                                {{_ 'template.home.services.box.hosting.text'}}
-                            </p>
-                            <p>
-                                <a href="#">
-                                    {{_ 'template.home.services.box.hosting.link'}}
-                                    <i class="fa fa-chevron-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class=" box center">
-                            <h4 class="service-heading">
-                                <i class="fa fa-code"></i>
-                                {{_ 'template.home.services.box.developement.title'}}
-                            </h4>
-                            <p>
-                                {{{_ 'template.home.services.box.developement.text'}}}
-                            </p>
-                            <p>
-                                <a href="#">
-                                    {{_ 'template.home.services.box.developement.link'}}
-                                    <i class="fa fa-question-circle"></i>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="box grey right">
-                            <h4 class="service-heading">
-                                <i class="fa fa-support"></i>
-                                {{_ 'template.home.services.box.support.title'}}
-                            </h4>
-                            <p>
-                                {{_ 'template.home.services.box.support.text'}}
-                            </p>
-                            <p>
-                                <a href="#">
-                                    {{_ 'template.home.services.box.support.link'}}
-                                    <i class="fa fa-chevron-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                {{> homeServices}}
             </div>
             {{> cloudsSvg}}
         </section>
         <section id="skills">
-            <ul class="container">
-                {{#each skills}}
-                    <li>
-                        <figure>
-                            <img class="img-circle img-thumbnail grey-scale" src="{{img}}" alt="{{name}}">
-                            <figcaption>
-                                <a href="{{url}}" target="_blank">{{name}}</a>
-                            </figcaption>
-                        </figure>
-                    </li>
-                {{/each}}
-            </ul>
+            <div class="container">
+                {{> homeSkills}}
+            </div>
         </section>
         <section id="consulting">
             <div class="container text-center">
-                <h3 class="section-title inverse">
-                    {{_ 'template.home.consulting.title'}}
-                </h3>
-                <p>
-                    <i class="fa fa-fw fa-graduation-cap"></i>
-                    {{_ 'template.home.consulting.text'}}
-                </p>
-                <p>
-                    <a href="#" class="btn btn-danger">
-                        <i class="fa fa-envelope-o"></i>
-                        Nous contacter
-                    </a>
-                </p>
+                {{> homeConsulting}}
             </div>
         </section>
         <section id="portfolio">
             <div class="container">
-                <h3>
-                    <i class="fa fa-flask"></i>
-                    Nos réalisations
-                    <span class="sorts-container">
-                        <span class="btn-group" role="group" aria-label="sort">
-                            <button type="button" class="btn btn-info btn-xs sort" data-sort-by="name">
-                                <i class="fa fa-sort"></i>
-                                Nom
-                            </button>
-                            <button type="button" class="btn btn-info btn-xs sort is-sorted" data-sort-by="importance">
-                                <i class="fa fa-sort"></i>
-                                Importance
-                            </button>
-                        </span>
-                    </span>
-                </h3>
-                <p>Vous trouverez les projets que nous avons réalisés et que nous maintenons. N'hésitez pas à les trier par nom, importance ou technologie.</p>
-                {{#with gallery}}
-                    <div class="filters-container">
-                        {{#each skills}}
-                            <button type="button" class="btn btn-default btn-xs filter" data-filter=".{{slug}}">
-                                {{name}}
-                                <i class="fa fa-times hidden"></i>
-                            </button>
-                        {{/each}}
-                    </div>
-                    <div id="gallery">
-                        {{#each projects}}
-                            <div class="grid-item thumbnail{{#each technologies}} {{this}}{{/each}}"
-                                 data-id="{{id}}"
-                                 data-name="{{name}}"
-                                 data-importance="{{importance}}">
-                                <a href="{{pathFor 'projectShow' id=id slug=slug}}" class="preview">
-                                    <img src="{{img}}" alt="{{name}}">
-                                </a>
-                                <div class="caption">
-                                    <h4>
-                                        <a href="{{url}}" class="name" target="_blank">
-                                            <i class="fa fa-external-link-square"></i>
-                                            {{name}}
-                                        </a>
-                                    </h4>
-                                    <p class="text-muted">{{_ description}}</p>
-                                </div>
-                            </div>
-                        {{/each}}
-                    </div>
-                {{/with}}
+                {{> homePortfolio}}
             </div>
             <div id="contributions">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4>
-                                <i class="fa fa-code-fork"></i>
-                                Nos contributions
-                            </h4>
-                        </div>
-                        <div class="col-md-6">
-                            <h4>
-                                <i class="fa fa-book"></i>
-                                Nos articles
-                            </h4>
-                            <div class="media">
-                                <div class="media-left">
-                                    <a href="#">
-                                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTA2NjQ3MWM3NiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1MDY2NDcxYzc2Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy40NzY1NjI1IiB5PSIzNi41Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
-                                    </a>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Titre de l'article</h4>
-                                    Description. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                </div>
-                            </div>
-                            <div class="media">
-                                <div class="media-left">
-                                    <a href="#">
-                                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTA2NjQ3MWM3NiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1MDY2NDcxYzc2Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy40NzY1NjI1IiB5PSIzNi41Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
-                                    </a>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Titre de l'article</h4>
-                                    Description. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                </div>
-                            </div>
-                            <div class="media">
-                                <div class="media-left">
-                                    <a href="#">
-                                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTA2NjQ3MWM3NiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1MDY2NDcxYzc2Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy40NzY1NjI1IiB5PSIzNi41Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
-                                    </a>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Titre de l'article</h4>
-                                    Description. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {{> homePortfolioContributions}}
                 </div>
             </div>
         </section>
-        <section id="why-meteor">
+        <section id="why">
             <div class="container">
-                <h3 class="section-title inverse">
-                    <i class="fa fa-commenting"></i>
-                    Pourquoi choisir MeteorJS ?
-                </h3>
-                <div class="pictured">
-                    <img src="/images/home-laptop.png" class="picture">
-                    <p>
-                        <strong>Framework entièrement JavaScript, MeteorJS est une de nos technologies phares.</strong>
-                        Rapide, flexible, performant, ce framework possède tous les avantages pour créer une application web,
-                        c'est pourquoi Meteor est actuellement un acteur majeur du développement JavaScript.<br>
-                        Chez Smalt, nous reconnaissons le potentiel de certaines technologies, c'est pourquoi nous sommes
-                        <strong>une des premières agences web</strong> à travailler avec <strong>Meteor</strong>.
-                    </p>
-                    <p>
-                        <strong>
-                            <i class="fa fa-star"></i>
-                            Un gage de modernité.
-                        </strong>
-                        Le marché de l'IT est aujourd'hui très concurentiel. Meteor apporte un gage de modernité à vos projets
-                        qui se démarqueront du flot d'applications qui sortent tous les jours.
-                    </p>
-                    <p>
-                        <a href="#" class="btn btn-danger">
-                            <i class="fa fa-rocket"></i>
-                            Tester Meteor
-                        </a>
-                    </p>
-                </div>
+                {{> homeWhy}}
             </div>
         </section>
         <section id="contact">
             <div class="container">
                 <h3 class="section-title inverse">
-                    <i class="fa fa-envelope-o"></i>
-                    Nous contacter
+                    {{{_ 'template.home.contact.title'}}}
                 </h3>
-                {{#autoForm options}}
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                {{> afFormGroup name='name'}}
-                            </div>
-                            <div class="form-group">
-                                {{> afFormGroup name='email'}}
-                            </div>
-                            <div class="form-group">
-                                {{> afFormGroup name='phone'}}
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                {{> afFormGroup name='message'}}
-                            </div>
-                        </div>
-                    </div>
-
-                    <button type="submit" class="btn btn-default btn-lg center-block">
-                        <i class="fa fa-send"></i>
-                        Envoyer
-                    </button>
-                {{/autoForm}}
+                {{> contact}}
             </div>
         </section>
         <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.7665170095465!2d4.875591615826018!3d45.735777023301225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c1e579cbfab1%3A0xfaf81bb24353a558!2s16+Rue+Jean+Desparmet%2C+69008+Lyon!5e0!3m2!1sfr!2sfr!4v1444665283894" width="100%" allowfullscreen></iframe>
+            {{> homeMap}}
         </div>
     </div>
 </template>

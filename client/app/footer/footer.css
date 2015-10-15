@@ -30,6 +30,11 @@
     transition: all .3s;
 }
 
+#footer ul.social-buttons li a:hover,
+#footer ul.social-buttons li a:focus,
+#footer ul.social-buttons li a:active {
+    background-color: #003399;
+}
 
 #footer ul.quicklinks {
     text-align: center;

@@ -1,3 +1,12 @@
+Template.contact.helpers({
+    options: function () {
+        return {
+            schema: Schema.Contact,
+            id: 'home-contact'
+        };
+    }
+});
+
 AutoForm.addHooks('contact', {
     onSubmit: function (data) {
         var inputPhone = $('input[name="phone"]');
@@ -18,8 +27,8 @@ AutoForm.addHooks('contact', {
             }
 
             swal({
-                title: TAPi18n.__('template.contact.alert.title'),
-                text: TAPi18n.__('template.contact.alert.text'),
+                title: TAPi18n.__('template.app.contact.alert.title'),
+                text: TAPi18n.__('template.app.contact.alert.text'),
                 type: 'success'
             }, function () {
                 Router.go('home');

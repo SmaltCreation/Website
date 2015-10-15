@@ -1,0 +1,14 @@
+<template name="homeSkills">
+    <ul id="home-skills">
+        {{#each skills}}
+            <li>
+                <figure>
+                    <img class="img-circle img-thumbnail grey-scale" src="{{img}}" alt="{{name}}">
+                    <figcaption>
+                        <a href="{{url}}" target="_blank">{{name}}</a>
+                    </figcaption>
+                </figure>
+            </li>
+        {{/each}}
+    </ul>
+</template>

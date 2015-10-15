@@ -1,0 +1,66 @@
+#home #services {
+    background: url("/images/_bg-piece-io.jpg");
+    background-size: 50%;
+    padding-bottom: 0;
+    padding-top: 20px;
+}
+
+#home #services .the-whole-package {
+    text-align: center;
+}
+
+#home #services .the-whole-package .box {
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
+    border: 5px solid #a6a6a6;
+    -moz-border-image: url("/images/_services-border2.png") 5 5 5 5 repeat;
+    -webkit-border-image: url("/images/_services-border2.png") 5 5 5 5 repeat;
+    -o-border-image: url("/images/_services-border2.png") 5 5 5 5 repeat;
+    border-image: url("/images/_services-border2.png") 5 5 5 5 fill repeat;
+    padding: 15px;
+    border-image-outset: 3px;
+    text-align: left;
+    background-color: #ffffff;
+    margin: 15px 0;
+    z-index: 100;
+    overflow: hidden;
+}
+
+#home #services .the-whole-package .box.center {
+    transform: scale(1);
+    z-index: 200;
+}
+
+#home #services .the-whole-package .box.grey {
+    border: 5px solid #cccccc;
+    -moz-border-image: url("/images/_services-border.png") 5 5 5 5 repeat;
+    -webkit-border-image: url("/images/_services-border.png") 5 5 5 5 repeat;
+    -o-border-image: url("/images/_services-border.png") 5 5 5 5 repeat;
+    border-image: url("/images/_services-border.png") 5 5 5 5 fill repeat;
+    border-image-outset: 3px;
+    background-color: #f2f2f2;
+}
+
+#home #services .the-whole-package .box span.fa-stack {
+    display: block;
+    margin: 0 auto;
+}
+
+#home #services .the-whole-package .box .service-heading {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+#home #services .the-whole-package .box a {
+    white-space: nowrap;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #home #services .the-whole-package .box {
+        margin: 0 5px;
+    }
+    #home #services .the-whole-package .box.center {
+        transform: scale(1.1);
+    }
+}

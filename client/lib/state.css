@@ -1,0 +1,8 @@
+.input-group-btn:last-child > .btn[data-state] {
+    z-index: auto;
+}
+
+button[data-state="enabled"] > span:not([data-state="enabled"]),
+button[data-state="disabled"] > span:not([data-state="disabled"]) {
+    display: none;
+}

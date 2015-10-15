@@ -1,0 +1,54 @@
+<template name="homePortfolio">
+    <div class="home-portfolio">
+        <h3>
+            <i class="fa fa-flask"></i>
+            {{_ 'template.home.portfolio.title'}}
+            <span class="sorts-container">
+                <span class="btn-group" role="group" aria-label="sort">
+                    <button type="button" class="btn btn-info btn-xs sort" data-sort-by="name">
+                        <i class="fa fa-sort"></i>
+                        {{_ 'template.home.portfolio.actions.sort.name'}}
+                    </button>
+                    <button type="button" class="btn btn-info btn-xs sort is-sorted" data-sort-by="importance">
+                        <i class="fa fa-sort"></i>
+                        {{_ 'template.home.portfolio.actions.sort.importance'}}
+                    </button>
+                </span>
+            </span>
+        </h3>
+        <p>
+            {{_ 'template.home.portfolio.text'}}
+        </p>
+        {{#with gallery}}
+            <div class="filters-container">
+                {{#each skills}}
+                    <button type="button" class="btn btn-default btn-xs filter" data-filter=".{{slug}}">
+                        {{name}}
+                        <i class="fa fa-times hidden"></i>
+                    </button>
+                {{/each}}
+            </div>
+            <div id="gallery">
+                {{#each projects}}
+                    <div class="grid-item thumbnail{{#each technologies}} {{this}}{{/each}}"
+                         data-id="{{id}}"
+                         data-name="{{name}}"
+                         data-importance="{{importance}}">
+                        <a href="{{pathFor 'projectShow' id=id slug=slug}}" class="preview">
+                            <img src="{{img}}" alt="{{name}}">
+                        </a>
+                        <div class="caption">
+                            <h4>
+                                <a href="{{url}}" class="name" target="_blank">
+                                    <i class="fa fa-external-link-square"></i>
+                                    {{name}}
+                                </a>
+                            </h4>
+                            <p class="text-muted">{{_ description}}</p>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        {{/with}}
+    </div>
+</template>
