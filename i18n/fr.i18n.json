@@ -1,5 +1,13 @@
 // Please preserve the alphabetical order
 {
+  "schema": {
+    "contact": {
+      "name": {
+        "label": "Nom",
+        "placeholder": "Anakin Skywalker"
+      }
+    }
+  },
   "template": {
     "app": {
       "navbar": {

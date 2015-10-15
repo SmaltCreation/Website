@@ -1,0 +1,16 @@
+{
+  "MAIL": {
+    "PROTOCOL": "smtp",
+    "USERNAME": "smalttestings@gmail.com",
+    "PASSWORD": "",
+    "SERVER": "smtp.gmail.com",
+    "PORT": "465"
+  },
+  "EMAIL": {
+    "FROM": "contact@smaltcreation.com",
+    "SITE_NAME": "Smalt Création"
+  },
+  "CONTACT": {
+    "SEND_TO": "contact@smaltcreation.com"
+  }
+}

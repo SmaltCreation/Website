@@ -2,6 +2,9 @@ I18NConf.onLanguageChange(function (old, tag) {
     moment.locale(tag);
 
     TAPi18n.setLanguage(tag)
+        .done(function () {
+            Schema.Contact.i18n('schema.contact');
+        })
         .fail(function (error) {
             console.log(error);
         });
