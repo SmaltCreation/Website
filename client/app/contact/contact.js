@@ -7,15 +7,8 @@ Template.contact.helpers({
     }
 });
 
-AutoForm.addHooks('contact', {
+AutoForm.addHooks('home-contact', {
     onSubmit: function (data) {
-        var inputPhone = $('input[name="phone"]');
-
-        if (!inputPhone.intlTelInput('isValidNumber')) {
-            Alert.open('error.invalid-phone-number');
-            return false;
-        }
-
         toggleButtonState('#contact');
 
         Meteor.call('sendEmail', data, function (error) {

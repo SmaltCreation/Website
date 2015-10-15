@@ -2,7 +2,7 @@
   "MAIL": {
     "PROTOCOL": "smtp",
     "USERNAME": "smalttestings@gmail.com",
-    "PASSWORD": "",
+    "PASSWORD": "rIAlEMIncIelFstatern",
     "SERVER": "smtp.gmail.com",
     "PORT": "465"
   },
