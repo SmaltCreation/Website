@@ -1,13 +1,16 @@
-@font-face {
-    font-family: quadranta;
-    src: url(/fonts/quadranta/Quadranta-Bold.otf);
-}
-
 #default header {
-    background-color: #262626;
     padding-top: 25px;
     color: #f5f5f5;
     text-align: center;
+
+    background: rgba(0,0,0,1);
+    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 24%, rgba(0,0,0,1) 40%, rgba(74,74,74,1) 49%, rgba(97,97,97,1) 50%, rgba(36,36,36,1) 53%, rgba(31,31,31,1) 61%, rgba(46,45,46,1) 75%, rgba(36,36,36,1) 88%, rgba(46,46,46,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(9%, rgba(0,0,0,1)), color-stop(24%, rgba(0,0,0,1)), color-stop(40%, rgba(0,0,0,1)), color-stop(49%, rgba(74,74,74,1)), color-stop(50%, rgba(97,97,97,1)), color-stop(53%, rgba(36,36,36,1)), color-stop(61%, rgba(31,31,31,1)), color-stop(75%, rgba(46,45,46,1)), color-stop(88%, rgba(36,36,36,1)), color-stop(100%, rgba(46,46,46,1)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 24%, rgba(0,0,0,1) 40%, rgba(74,74,74,1) 49%, rgba(97,97,97,1) 50%, rgba(36,36,36,1) 53%, rgba(31,31,31,1) 61%, rgba(46,45,46,1) 75%, rgba(36,36,36,1) 88%, rgba(46,46,46,1) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 24%, rgba(0,0,0,1) 40%, rgba(74,74,74,1) 49%, rgba(97,97,97,1) 50%, rgba(36,36,36,1) 53%, rgba(31,31,31,1) 61%, rgba(46,45,46,1) 75%, rgba(36,36,36,1) 88%, rgba(46,46,46,1) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 24%, rgba(0,0,0,1) 40%, rgba(74,74,74,1) 49%, rgba(97,97,97,1) 50%, rgba(36,36,36,1) 53%, rgba(31,31,31,1) 61%, rgba(46,45,46,1) 75%, rgba(36,36,36,1) 88%, rgba(46,46,46,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 24%, rgba(0,0,0,1) 40%, rgba(74,74,74,1) 49%, rgba(97,97,97,1) 50%, rgba(36,36,36,1) 53%, rgba(31,31,31,1) 61%, rgba(46,45,46,1) 75%, rgba(36,36,36,1) 88%, rgba(46,46,46,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#2e2e2e', GradientType=0 );
 }
 
 #default header .brand {
@@ -18,31 +21,6 @@
 #default header h1 {
     margin-top: 0;
     font-size: 30px;
-}
-
-#default header h2 {
-    color: #cccccc;
-    letter-spacing: 0.3px;
-    font-size: 20px;
-}
-
-#default header small a,
-#default header small {
-    color: #4ebaba;
-    display: inline-block;
-}
-
-#default header small a {
-    text-decoration: none;
-    -webkit-transition: ease-out .3s;
-    -moz-transition: ease-out .3s;
-    -ms-transition: ease-out .3s;
-    -o-transition: ease-out .3s;
-    transition: ease-out .3s;
-}
-
-#default header small a:hover {
-    color: #f5f5f5;
 }
 
 /* Extra small devices (phones, less than 768px) */
@@ -56,9 +34,6 @@
     #default header h1 {
         font-size: 50px;
     }
-    #default header h2 {
-        font-size: 30px;
-    }
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -69,9 +44,6 @@
     #default header h1 {
         font-size: 75px;
     }
-    #default header h2 {
-        font-size: 50px;
-    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -81,90 +53,52 @@
     }
 }
 
-#other-skills {
-    background: #f5f5f5;
-    padding: 30px 0;
-}
-
-#other-skills ul {
+#descriptionproject {
+    background-size: 50%;
+    padding-bottom: 0;
     text-align: center;
-    list-style: none;
 }
 
-#other-skills li {
-    display: inline-block;
-    margin: 20px 10px;
+@media (min-width: 768px) {
+    #descriptionproject {
+        font-size: 14px;
+    }
+}
+@media (min-width: 992px) {
+    #descriptionproject {
+        font-size: 20px;
+    }
 }
 
-#other-skills li figure img {
-    height: 50px;
-    width: 50px;
-    background-color: #f5f5f5;
-    -webkit-transition: ease-out .15s;
-    -moz-transition: ease-out .15s;
-    -ms-transition: ease-out .15s;
-    -o-transition: ease-out .15s;
-    transition: ease-out .15s;
+#default .banner img {
+    width: 500px;
+    margin-top: 20px;
 }
 
-#other-skills li figure figcaption a {
-    font-style: italic;
-    font-size: 10px;
-    color: #555;
+#default .techlabel {
+    font-size: 16px;
 }
 
-#other-skills li figure figcaption a:hover {
-    color: #4ebaba;
+#default .techlabel a {
+    color: white;
     text-decoration: none;
 }
 
-#other-skills li figure img:focus,
-#other-skills li figure img:hover {
-    -webkit-transform: rotate(-15deg);
-    -moz-transform: rotate(-15deg);
-    -ms-transform: rotate(-15deg);
-    -o-transform: rotate(-15deg);
-    transform: rotate(-15deg);
-    -webkit-filter: none;
-    filter: none;
-}
-
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    #other-skills li figure img {
-        height: 100px;
-        width: 100px;
-    }
-    #other-skills li figure figcaption {
-        font-size: 14px;
-    }
-    #other-skills li {
-        margin: 20px 20px;
-    }
-}
-
-#descriptionproject {
-    background: #27272b url("/images/_node-top.png");
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    background-size: 1280px 120px;
+#default .techlabel a:hover {
     color: white;
-    text-align: center;
+    text-decoration: underline;
 }
 
-.banner img {
-    width: 500px;
+#default .techlabel a:visited {
+    color: white;
 }
 
-#pagebot {
-    min-height: 320px;
-    background: url("/images/_node-bottom.png") no-repeat 50% 0;
-    background-color: #27272b;
-    padding: 0 0 50px;
-    position: relative;
-    background-size: 1600px 344px;
-    margin-bottom: -50px;
-}
+#default .Bootstrap {  background-color: #920092;  }
+#default .Meteor {  background-color: black;    }
+#default .JavaScript {  background-color: yellow;  }
+#default .JavaScript a {    color: black;   }
+#default .JavaScript a:hover {    color: black;   }
+#default .MongoDB { background-color: green;    }
+#default .Ubuntu { background-color: orange;    }
+#default .Stripe { background-color: #5249ff;    }
+#default .Nexmo { background-color: #1e90ff;    }

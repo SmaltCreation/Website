@@ -4,34 +4,24 @@
             <div class="banner">
                 <a href="{{project.url}}" target="_blank"><img src="{{ project.img }}"></a>
                 <h1 class="brand">{{ project.name }}</h1>
-                <h2><small>
-                    <a href="{{project.url}}" target="_blank">{{project.url}}</a>
-                </small></h2>
-            </div>
 
-        </header>
-        <section id="show">
-            <div id="other-skills">
-                <ul class="container">
+                <div class="row">
                     {{#each technologies}}
-                        <li>
-                            <figure>
-                                <img class="img-circle img-thumbnail grey-scale" src="{{img}}" alt="{{name}}">
-                                <figcaption>
-                                    <a href="{{url}}" target="_blank">{{name}}</a>
-                                </figcaption>
-                            </figure>
-                        </li>
+                        <span class="label label-default techlabel {{name}}"><a href="{{url}}" target="_blank">{{name}}</a></span>
                     {{/each}}
-                </ul>
+                </div>
             </div>
-        </section>
+        </header>
         <section id="descriptionproject">
-            <div class="container">
-                <p>{{_ project.description}}</p>
-            </div>
-            <div id="pagebot">
-
+            <div class="row">
+                <div class="panel panel-default col-lg-offset-3 col-lg-6">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Description</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>{{_ project.description}}</p>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
