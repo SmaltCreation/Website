@@ -13,7 +13,7 @@ I18NConf.onLanguageChange(function (old, tag) {
 Meteor.startup(function () {
     I18NConf.configure({
         languages: ['fr', 'en'],
-        defaultLanguage: 'fr',
+        defaultLanguage: DEFAULT_LANG,
         autoConfLanguage: false
     });
 
