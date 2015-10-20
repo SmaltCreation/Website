@@ -128,6 +128,20 @@
           "button": "Tester Meteor"
         }
       }
+    },
+    "meteorDemo": {
+      "demo": {
+        "title": {
+          "first": "Demonstration Meteor",
+          "second": "Pourquoi Meteor ?"
+        },
+        "texts": {
+          "description": "Cum bulla cantare, omnes caesiumes carpseris peritus, primus imberes.",
+          "faster": "Parrots whine from graces like rainy masts.",
+          "asynchrone": "Golly gosh there's nothing like the black riddle rising on the sun.",
+          "lightweight": "Freebooters sing on courage at rummage island!"
+        }
+      }
     }
   }
 }
