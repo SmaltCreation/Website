@@ -171,7 +171,7 @@
       },
       "services": {
         "box": {
-          "developement": {
+          "development": {
             "title": "Développement",
             "text": "Nous utilisons des technologies performantes et innovantes afin de proposer des applications toujours dans l'aire du temps. Connaissez-vous peut-être <a href=\"http://meteor.com\">MeteorJS</a> ou <a href=\"http://symfony.com\">Symfony2</a> ?",
             "link": "Comment ça marche"
@@ -193,6 +193,62 @@
           "title": "Pourquoi %s ?"
         }
       }
+    },
+    "hosting": {
+      "basic": {
+        "title": "Hébergement basic",
+        "discount": "%s",
+        "price": "<strong>%s €</strong> <small>TTC</small>",
+        "li": {
+          "domain": "Nom de domaine inclus",
+          "disk": "10 Go d'espace disque",
+          "email": "10 comptes email",
+          "back-up": "1 sauvegarde par mois",
+          "data": "200 Mo de données SQL"
+        },
+        "info": "Tarifs mensuels",
+        "form": {
+          "help-text": "mois"
+        }
+      },
+      "premium": {
+        "title": "Hébergement premium",
+        "discount": "%s",
+        "price": "<strong>%s €</strong> <small>TTC</small>",
+        "li": {
+          "domain": "Nom de domaine inclus",
+          "disk": "250 Go d'espace disque",
+          "email": "100 comptes email",
+          "back-up": "1 sauvegarde par semaine",
+          "data": "200 Go de données SQL"
+        },
+        "info": "Tarifs mensuels",
+        "form": {
+          "help-text": "mois"
+        }
+      },
+      "vps": {
+        "title": "Hébergement VPS",
+        "discount": "%s",
+        "price": "<strong>%s €</strong> <small>TTC</small>",
+        "li": {
+          "domain": "Nom de domaine inclus",
+          "disk": "SSD 10 Go",
+          "email": "1 compte email",
+          "back-up": "1 sauvegarde par mois",
+          "cpu": "2,4 GHz"
+        },
+        "info": "Tarifs mensuels",
+        "form": {
+          "help-text": "mois"
+        }
+      },
+      "page": {
+        "title": "Hébergements",
+        "description": "Retrouvez nos solutions d'hébergements. Que ce soit un serveur mutualisé, un VPS classic ou un serveur dédié, nous avons la formule adaptée à vos besoins."
+      },
+      "title": "Hébergements",
+      "description": "Nos hébergements sont adaptés à vos besoins. De l'installation du système à la mise en production de votre site, nous nous chargeons de tout."
     },
     "project": {
       "show": {

@@ -18,8 +18,6 @@ function execute (selector, duration, margin) {
 
     var top = selector.offset().top - $('#navbar').height();
 
-    //console.log(top);
-
     if (margin !== undefined) {
         top += margin;
     }

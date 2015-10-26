@@ -1,0 +1,64 @@
+.offer.panel-pricing {
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    margin-bottom: 50px;
+}
+
+.offer.panel-pricing:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.offer.panel-pricing .panel-heading {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.offer.panel-pricing .panel-heading .fa {
+    margin-top: 10px;
+    font-size: 58px;
+}
+
+.offer.panel-pricing .list-group-item {
+    color: #777777;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+}
+
+.offer.panel-pricing .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.offer.panel-pricing .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.offer.panel-pricing .panel-body {
+    background-color: #f5f5f5;
+    font-size: 40px;
+    color: #777777;
+    padding: 20px;
+    margin: 0;
+}
+
+.offer.panel-pricing .panel-body p {
+    margin-bottom: 0;
+}
+
+.offer.panel-pricing .panel-body .total-price small,
+.offer.panel-pricing .panel-body .total-price del.discount {
+    font-size: 25px;
+}
+
+.offer.panel del.discount {
+    margin-right: 10px;
+}
+
+.offer.panel-pricing form {
+    display: none;
+}
+
+.offer.panel-pricing .price-with-reduction {
+    display: inline-block;
+}
