@@ -2,8 +2,10 @@
     <footer id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright © <span>2014</span> - 2015. Tous droits réservés.</span>
+                <div class="col-md-4 text-muted">
+                    <span class="status">
+                        {{_ 'template.app.footer.left.text'}}
+                    </span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
@@ -23,7 +25,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://plus.google.com/106143657179044353589" rel="publisher" target="_blank">
+                            <a href="https://plus.google.com/114808428019278064922/" rel="publisher" target="_blank">
                                 <i class="fa fa-google-plus"></i>
                             </a>
                         </li>
@@ -31,9 +33,21 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <li><a href="{{pathFor 'home'}}#services">Services</a></li>
-                        <li><a href="{{pathFor 'home'}}#portfolio">Portfolio</a></li>
-                        <li><a href="{{pathFor 'terms'}}">Conditions</a></li>
+                        <li>
+                            <a class="anchor" href="{{pathFor 'home'}}#services">
+                                {{_ 'template.app.footer.right.services'}}
+                            </a>
+                        </li>
+                        <li>
+                            <a class="anchor" href="{{pathFor 'home'}}#portfolio">
+                                {{_ 'template.app.footer.right.projects'}}
+                            </a>
+                        </li>
+                        <li>
+                            <a class="anchor" href="{{pathFor 'terms'}}">
+                                {{_ 'template.app.footer.right.terms'}}
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -1,0 +1,23 @@
+.label.tech {
+    margin: 0 5px 5px 0;
+}
+
+.label.tech a {
+    color: white;
+}
+
+.label.tech a:hover {
+    text-decoration: none;
+}
+
+.label.tech.bootstrap { background-color: #6f5499; }
+.label.tech.googleMaps { background-color: #d32f2f; }
+.label.tech.javaScript { background-color: #eacf00; }
+.label.tech.meteor { background-color: #de4f4f; }
+.label.tech.mongoDB { background-color: #69b241; }
+.label.tech.nexmo { background-color: #128ec3; }
+.label.tech.nginx { background-color: #00B140; }
+.label.tech.stripe { background-color: #008cdd ; }
+.label.tech.symfony2 { background-color: #000000 ; }
+.label.tech.ubuntuServer { background-color: #dd4814; }
+.label.tech.wordpress { background-color: #23282d; }

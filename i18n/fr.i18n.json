@@ -18,6 +18,24 @@
     },
     "tilamp": {
       "description": "Le bon coin des artisans, professionels du bâtiment, de l'habitat et des travaux extérieurs."
+    },
+    "paypal-rest-api": {
+      "description": "Package meteor permettant de gérer les transactions PayPal via la REST API."
+    },
+    "autoform-input-addon-icon": {
+      "description": "Package meteor permettant  d'ajouter des icônes aux champs d'<em>autoform</em> façon <em>Bootstrap Addon Icon</em>."
+    },
+    "autoform-intl-tel-input": {
+      "description": "Package meteor permettant d'ajout un champ <em>autoform</em> \"téléphone\" complet et détaillé grâce à <em>intl</em>"
+    },
+    "alert-i18n": {
+      "description": "Package meteor permettant l'internationalisation des messages d'erreur, d'info, d'aveetissement et de succès."
+    },
+    "autoform-file": {
+      "description": "Package meteor améliorant l'upload de fichier tel que les images avec une interface agréable à voir."
+    },
+    "manager": {
+      "description": "ERP minimaliste, il conviendra à toute entreprise qui souhaite mieux gérer ses ressources personnelles."
     }
   },
   "schema": {
@@ -40,6 +58,41 @@
       }
     }
   },
+  "technology": {
+    "bootstrap": {
+      "description": "Insert your description here"
+    },
+    "googleMaps": {
+      "description": ""
+    },
+    "javaScript": {
+      "description": ""
+    },
+    "meteor": {
+      "description": ""
+    },
+    "mongoDB": {
+      "description": ""
+    },
+    "nginx": {
+      "description": ""
+    },
+    "nexmo": {
+      "description": ""
+    },
+    "stripe": {
+      "description": ""
+    },
+    "symfony2": {
+      "description": ""
+    },
+    "ubuntuServer": {
+      "description": ""
+    },
+    "wordpress": {
+      "description": ""
+    }
+  },
   "template": {
     "app": {
       "contact": {
@@ -57,6 +110,16 @@
         "services": "Nos services",
         "skills": "Nos compétences",
         "why-meteor": "Pourquoi MeteorJS"
+      },
+      "footer": {
+        "left": {
+          "text": "SMALT CREATION ­ SAS au capital de 2 100 € ­ SIREN 803881028 R.C.S. Lyon"
+        },
+        "right": {
+          "projects": "Portfolio",
+          "services": "Services",
+          "terms": "Conditions"
+        }
       }
     },
     "home": {
@@ -83,7 +146,7 @@
       },
       "header": {
         "brand": "Smalt Création",
-        "text": "Agence web et start-up basée sur Lyon, Smalt est une société spécialisée dans le <strong>développement de sites et d'applications</strong>.<span class=hidden-sm><br>L'informatique évoluant, nous développons des applications performantes et attractives dans un esprit collaboratif et professionnel.</span>"
+        "text": "Agence web et start-up basée sur Lyon, Smalt est une société spécialisée dans le <strong>développement de sites et d'applications</strong>.<span class=\"hidden-xs hidden-sm\"><br>L'informatique évoluant, nous développons des applications performantes et attractives dans un esprit collaboratif et professionnel.</span>"
       },
       "page": {
         "title": "Développement web Lyon - Expert MeteorJS",
@@ -97,6 +160,13 @@
             "name": "Nom",
             "importance": "Taille"
           }
+        },
+        "contributions": {
+          "title": "Nos contributions"
+        },
+        "articles": {
+          "title": "Nos articles",
+          "none": "Nous n'avons aucun article à vous présenter pour l'instant. Merci de revenir un peu plus tard."
         }
       },
       "services": {
@@ -118,28 +188,38 @@
           }
         }
       },
-      "why": {
-        "meteor": {
-          "title": "<i class=\"fa fa-commenting\"></i> Pourquoi choisir MeteorJS ?",
-          "texts": {
-            "description": "<strong>Framework entièrement JavaScript, MeteorJS est une de nos technologies phares.</strong> Rapide, flexible, performant, ce framework possède tous les avantages pour créer une application web, c'est pourquoi Meteor est actuellement un acteur majeur du développement JavaScript.<br> Chez Smalt, nous reconnaissons le potentiel de certaines technologies, c'est pourquoi nous sommes <strong>une des premières agences web</strong> à travailler avec <strong>Meteor</strong>.",
-            "modern": " <strong><i class=\"fa fa-star\"></i> Un gage de modernité.</strong>Le marché de l'IT est aujourd'hui très concurentiel. Meteor apporte un gage de modernité à vos projetsqui se démarqueront du flot d'applications qui sortent tous les jours."
-          },
-          "button": "Tester Meteor"
+      "skills": {
+        "modal": {
+          "title": "Pourquoi %s ?"
         }
       }
     },
-    "meteorDemo": {
-      "demo": {
-        "title": {
-          "first": "Demonstration Meteor",
-          "second": "Pourquoi Meteor ?"
+    "project": {
+      "show": {
+        "external-link": "Lien externe du projet"
+      }
+    },
+    "why": {
+      "meteor": {
+        "home": {
+          "title": "<i class=\"fa fa-commenting\"></i> Pourquoi choisir MeteorJS ?",
+          "texts": {
+            "description": "<strong>Framework entièrement JavaScript, MeteorJS est une de nos technologies phares.</strong> Rapide, flexible, performant, ce framework possède tous les avantages pour créer une application web, c'est pourquoi Meteor est actuellement un acteur majeur du développement JavaScript.<br> Chez Smalt, nous reconnaissons le potentiel de certaines technologies, c'est pourquoi nous sommes <strong>une des premières agences web</strong> à travailler avec <strong>Meteor</strong>.",
+            "modern": " <strong><i class=\"fa fa-star\"></i> Un gage de modernité.</strong>Le marché de l'IT est aujourd'hui très concurentiel. Meteor apporte un gage de modernité à vos projets qui se démarqueront du flot d'applications qui sortent tous les jours."
+          },
+          "button": "Découvrir Meteor"
         },
-        "texts": {
-          "description": "Cum bulla cantare, omnes caesiumes carpseris peritus, primus imberes.",
-          "faster": "Parrots whine from graces like rainy masts.",
-          "asynchrone": "Golly gosh there's nothing like the black riddle rising on the sun.",
-          "lightweight": "Freebooters sing on courage at rummage island!"
+        "demo": {
+          "title": {
+            "first": "Demonstration Meteor",
+            "second": "Pourquoi Meteor ?"
+          },
+          "texts": {
+            "description": "Cum bulla cantare, omnes caesiumes carpseris peritus, primus imberes.",
+            "faster": "Parrots whine from graces like rainy masts.",
+            "asynchrone": "Golly gosh there's nothing like the black riddle rising on the sun.",
+            "lightweight": "Freebooters sing on courage at rummage island!"
+          }
         }
       }
     }

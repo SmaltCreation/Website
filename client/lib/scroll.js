@@ -1,5 +1,8 @@
 scrollTo = function (selector, delay, duration, margin) {
-    if (delay === undefined || delay === 0) {
+    if (selector === undefined) {
+        return false
+    }
+    else if (delay === undefined || delay === 0) {
         execute(selector, duration, margin);
     } else {
         setTimeout(function () {
@@ -13,7 +16,9 @@ function execute (selector, duration, margin) {
         duration = 400;
     }
 
-    var top = $(selector).offset().top - $('#navbar').height();
+    var top = selector.offset().top - $('#navbar').height();
+
+    //console.log(top);
 
     if (margin !== undefined) {
         top += margin;
@@ -21,5 +26,9 @@ function execute (selector, duration, margin) {
 
     $('html, body').animate({
         scrollTop: top
-    }, duration);
+    }, duration, function() {
+        //if (selector.attr('id')) {
+        //    window.location.hash = selector.attr('id');
+        //}
+    });
 }

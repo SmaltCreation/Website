@@ -3,7 +3,7 @@ technologiesFixtures = {
         id: 1,
         slug: 'bootstrap',
         name: 'Bootstrap',
-        description: '',
+        description: 'technology.bootstrap.description',
         img: '/images/technology-bootstrap.png',
         url: 'http://getbootstrap.com/',
         isSkill: true
@@ -12,7 +12,7 @@ technologiesFixtures = {
         id: 2,
         slug: 'googleMaps',
         name: 'Google Maps',
-        description: '',
+        description: 'technology.googleMaps.description',
         img: '/images/technology-googlemaps.png',
         url: 'https://www.google.fr/maps/',
         isSkill: true
@@ -21,7 +21,7 @@ technologiesFixtures = {
         id: 3,
         slug: 'javaScript',
         name: 'JavaScript',
-        description: '',
+        description: 'technology.javaScript.description',
         img: '/images/technology-javascript.png',
         url: 'https://developer.mozilla.org/fr/docs/Web/JavaScript',
         isSkill: true
@@ -30,7 +30,7 @@ technologiesFixtures = {
         id: 4,
         slug: 'meteor',
         name: 'Meteor',
-        description: '',
+        description: 'technology.meteor.description',
         img: '/images/technology-meteor.png',
         url: 'http://meteor.com/',
         isSkill: true
@@ -39,7 +39,7 @@ technologiesFixtures = {
         id: 5,
         slug: 'mongoDB',
         name: 'MongoDB',
-        description: '',
+        description: 'technology.mongoDB.description',
         img: '/images/technology-mongodb.jpg',
         url: 'https://www.mongodb.org/',
         isSkill: true
@@ -48,7 +48,7 @@ technologiesFixtures = {
         id: 6,
         slug: 'nexmo',
         name: 'Nexmo',
-        description: '',
+        description: 'technology.nexmo.description',
         img: '/images/technology-nexmo.png',
         url: 'https://www.nexmo.com/',
         isSkill: true
@@ -57,7 +57,7 @@ technologiesFixtures = {
         id: 7,
         slug: 'nginx',
         name: 'NGINX',
-        description: '',
+        description: 'technology.nginx.description',
         img: '/images/technology-nginx.png',
         url: 'http://nginx.org/',
         isSkill: true
@@ -66,7 +66,7 @@ technologiesFixtures = {
         id: 8,
         slug: 'stripe',
         name: 'Stripe',
-        description: '',
+        description: 'technology.stripe.description',
         img: '/images/technology-stripe.png',
         url: 'https://stripe.com/fr',
         isSkill: true
@@ -75,7 +75,7 @@ technologiesFixtures = {
         id: 9,
         slug: 'symfony2',
         name: 'Symfony2',
-        description: '',
+        description: 'technology.symfony2.description',
         img: '/images/technology-symfony2.png',
         url: 'http://symfony.com/',
         isSkill: true
@@ -84,7 +84,7 @@ technologiesFixtures = {
         id: 10,
         slug: 'ubuntuServer',
         name: 'Ubuntu Server',
-        description: '',
+        description: 'technology.ubuntuServer.description',
         img: '/images/technology-ubuntuserver.png',
         url: 'http://www.ubuntu.com/download/server',
         isSkill: true
@@ -93,7 +93,7 @@ technologiesFixtures = {
         id: 11,
         slug: 'wordpress',
         name: 'Wordpress',
-        description: '',
+        description: 'technology.wordpress.description',
         img: '/images/technology-wordpress.png',
         url: 'https://fr.wordpress.org/',
         isSkill: true
@@ -110,6 +110,7 @@ projectsFixtures = [
         url: 'https://www.inck.fr',
         importance: 3,
         portfolio: true,
+        contribution: false,
         draft: false,
         technologies: [
             technologiesFixtures.bootstrap.slug,
@@ -126,6 +127,7 @@ projectsFixtures = [
         url: 'http://www.lyon7rivegauche.com',
         importance: 4,
         portfolio: true,
+        contribution: false,
         draft: false,
         technologies: [
             technologiesFixtures.wordpress.slug
@@ -139,6 +141,7 @@ projectsFixtures = [
         url: 'http://www.croixrousselive.org',
         importance: 6,
         portfolio: true,
+        contribution: false,
         draft: false,
         technologies: [
             technologiesFixtures.wordpress.slug
@@ -153,6 +156,7 @@ projectsFixtures = [
         importance: 5,
         portfolio: true,
         draft: false,
+        contribution: false,
         technologies: [
             technologiesFixtures.wordpress.slug
         ]
@@ -165,6 +169,7 @@ projectsFixtures = [
         url: 'https://www.tilamp.com',
         importance: 1,
         portfolio: true,
+        contribution: false,
         draft: false,
         technologies: [
             technologiesFixtures.bootstrap.slug,
@@ -185,6 +190,7 @@ projectsFixtures = [
         url: 'https://www.network-icon.com',
         importance: 2,
         portfolio: true,
+        contribution: false,
         draft: false,
         technologies: [
             technologiesFixtures.bootstrap.slug,
@@ -195,6 +201,104 @@ projectsFixtures = [
             technologiesFixtures.nexmo.slug,
             technologiesFixtures.stripe.slug,
             technologiesFixtures.ubuntuServer.slug
+        ]
+    }, {
+        id: 8,
+        slug: 'paypal-rest-api',
+        name: 'meteor-paypal-rest-api',
+        description: 'project.paypal-rest-api.description',
+        img: '',
+        url: 'https://atmospherejs.com/smaltcreation/paypal-rest-api',
+        importance: 4,
+        portfolio: false,
+        contribution: true,
+        draft: false,
+        technologies: [
+            technologiesFixtures.bootstrap.slug,
+            technologiesFixtures.javaScript.slug,
+            technologiesFixtures.meteor.slug
+        ]
+    }, {
+        id: 9,
+        slug: 'autoform-input-addon-icon',
+        name: 'meteor-autoform-input-addon-icon',
+        description: 'project.autoform-input-addon-icon.description',
+        img: '',
+        url: 'https://atmospherejs.com/smaltcreation/autoform-input-addon-icon',
+        importance: 3,
+        portfolio: false,
+        contribution: true,
+        draft: false,
+        technologies: [
+            technologiesFixtures.bootstrap.slug,
+            technologiesFixtures.javaScript.slug,
+            technologiesFixtures.meteor.slug
+        ]
+    }, {
+        id: 10,
+        slug: 'autoform-intl-tel-input',
+        name: 'meteor-autoform-intl-tel-input',
+        description: 'project.autoform-intl-tel-input.description',
+        img: '',
+        url: 'https://atmospherejs.com/smaltcreation/autoform-intl-tel-input',
+        importance: 3,
+        portfolio: false,
+        contribution: true,
+        draft: false,
+        technologies: [
+            technologiesFixtures.bootstrap.slug,
+            technologiesFixtures.javaScript.slug,
+            technologiesFixtures.meteor.slug
+        ]
+    }, {
+        id: 11,
+        slug: 'alert-i18n',
+        name: 'meteor-alert-i18n',
+        description: 'project.alert-i18n.description',
+        img: '',
+        url: 'https://atmospherejs.com/smaltcreation/alert-i18n',
+        importance: 4,
+        portfolio: false,
+        contribution: true,
+        draft: false,
+        technologies: [
+            technologiesFixtures.bootstrap.slug,
+            technologiesFixtures.javaScript.slug,
+            technologiesFixtures.meteor.slug
+        ]
+    }, {
+        id: 12,
+        slug: 'autoform-file',
+        name: 'meteor-autoform-file',
+        description: 'project.autoform-file.description',
+        img: '',
+        url: 'https://atmospherejs.com/smaltcreation/autoform-file',
+        importance: 3,
+        portfolio: false,
+        contribution: true,
+        draft: false,
+        technologies: [
+            technologiesFixtures.bootstrap.slug,
+            technologiesFixtures.javaScript.slug,
+            technologiesFixtures.meteor.slug,
+            technologiesFixtures.mongoDB.slug
+        ]
+    }, {
+        id: 13,
+        slug: 'manager',
+        name: 'manager',
+        description: 'project.manager.description',
+        img: '/images/project-manager360x203.png',
+        url: 'https://github.com/SmaltCreation/manager',
+        importance: 2,
+        portfolio: true,
+        contribution: true,
+        draft: false,
+        technologies: [
+            technologiesFixtures.bootstrap.slug,
+            technologiesFixtures.javaScript.slug,
+            technologiesFixtures.meteor.slug,
+            technologiesFixtures.mongoDB.slug
         ]
     }
 ];

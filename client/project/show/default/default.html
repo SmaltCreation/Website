@@ -1,28 +1,28 @@
 <template name="projectShowDefault">
-    <div id="default">
-        <header>
-            <div class="banner">
-                <a href="{{project.url}}" target="_blank"><img src="{{ project.img }}"></a>
-                <h1 class="brand">{{ project.name }}</h1>
-
-                <div class="row">
+    <div id="project-show-default">
+        <div class="jumbotron">
+            <div class="container">
+                <h1>
+                    {{project.name}}
+                    <small>
+                        <a href="{{project.url}}" class="btn btn-default btn-xs" target="_blank">
+                            <i class="fa fa-external-link"></i>
+                            {{_ 'template.project.show.external-link'}}
+                        </a>
+                    </small>
+                </h1>
+                <div class="technologies">
                     {{#each technologies}}
-                        <span class="label label-default techlabel {{name}}"><a href="{{url}}" target="_blank">{{name}}</a></span>
+                        <span class="label tech">
+                            {{name}}
+                        </span>
                     {{/each}}
                 </div>
+                <p>
+                    {{_ project.description}}
+                </p>
+                <img class="img-thumbnail img-responsive" src="{{project.img}}">
             </div>
-        </header>
-        <section id="descriptionproject">
-            <div class="row">
-                <div class="panel panel-default col-lg-offset-3 col-lg-6">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Description</h3>
-                    </div>
-                    <div class="panel-body">
-                        <p>{{_ project.description}}</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </div>
 </template>

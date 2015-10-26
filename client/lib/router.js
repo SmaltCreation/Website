@@ -4,6 +4,10 @@ Router.configure({
     notFoundTemplate:   'notFound'
 });
 
+Router.onAfterAction(function() {
+    Session.set('hash', this.params.hash);
+});
+
 Iron.Location.configure({
     useHashPaths: false
 });
@@ -14,3 +18,19 @@ Router.onAfterAction(function() {
         navbarToggle.click();
     }
 });
+
+routerScroll = function () {
+    Deps.autorun(function (){
+        var hash =  Session.get('hash');
+        if (hash) {
+            var selector = $('#' + hash);
+            var checkExist = setInterval(function() {
+                if (selector.length) {
+                    clearInterval(checkExist);
+                    scrollTo(selector);
+                    Session.set('hash', '');
+                }
+            }, 100);
+        }
+    });
+};

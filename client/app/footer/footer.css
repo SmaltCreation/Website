@@ -1,17 +1,14 @@
 #footer {
-    padding: 25px 0;
+    padding: 60px 0;
     text-align: center;
-    background-color: #f8f8f8;
+    background-color: #fff;
     border-color: #e7e7e7;
     border-width: 1px 0 0;
 }
 
-#footer span.copyright {
-    line-height: 40px;
-}
-
 #footer ul.social-buttons {
     text-align: center;
+    margin-top: 10px;
     margin-bottom: 0;
 }
 
@@ -42,8 +39,8 @@
     line-height: 40px;
 }
 
-@media (min-width: 9992px) {
-    #footer ul.quicklinks {
-        text-align: right;
+@media (min-width: 992px) {
+    #footer ul.social-buttons {
+        margin-top: 0;
     }
 }

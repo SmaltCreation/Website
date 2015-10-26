@@ -11,6 +11,29 @@
     margin-bottom: -50px;
 }
 
+#contributions .fa-ul li {
+    margin-top: 15px;
+    color: #cccccc;
+}
+
+#contributions .fa-ul li h4 {
+    margin-bottom: 5px;
+}
+
+#contributions .fa-ul .external {
+    color: #ffffff;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#contributions .fa-ul .external:hover {
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
 @media (min-width: 992px) {
     #contributions {
         margin-bottom: -75px;

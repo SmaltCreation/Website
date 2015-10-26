@@ -4,7 +4,8 @@ Router.route('/', {
     waitOn: function () {
         return [
             Meteor.subscribe('technologies-skills'),
-            Meteor.subscribe('projects-portfolio')
+            Meteor.subscribe('projects-portfolio'),
+            Meteor.subscribe('projects-contributions')
         ];
     },
     onAfterAction: function() {
