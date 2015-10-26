@@ -1,9 +1,9 @@
 #navbar {
-    -webkit-transition: ease-out .5s;
-    -moz-transition: ease-out .5s;
-    -ms-transition: ease-out .5s;
-    -o-transition: ease-out .5s;
-    transition: ease-out .5s;
+    -webkit-transition: ease-out .2s;
+    -moz-transition: ease-out .2s;
+    -ms-transition: ease-out .2s;
+    -o-transition: ease-out .2s;
+    transition: ease-out .2s;
 }
 
 #navbar li.accounts {

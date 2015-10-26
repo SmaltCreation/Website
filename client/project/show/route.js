@@ -42,5 +42,20 @@ Router.route('/project/show/:id/:slug', {
         }
 
         return false;
+    },
+    onAfterAction: function() {
+        if (!this.data().project) {
+            return false;
+        }
+
+        var title = this.data().project.name;
+        var description = this.data().project.description;
+
+        SEO.set({
+            title: title + TITLE_SUFFIX,
+            meta: {
+                'description': description
+            }
+        });
     }
 });

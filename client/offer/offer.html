@@ -1,0 +1,51 @@
+<template name="offer">
+    <div class="offer panel panel-{{panelClass}} panel-pricing">
+        <div class="panel-heading">
+            {{#if icon}}
+                <i class="{{icon}}"></i>
+            {{/if}}
+            <h3>{{_ title}}</h3>
+        </div>
+        <div class="panel-body text-center">
+            <p class="total-price">
+                {{#if discount}}
+                    <del class="discount">
+                        {{_ price.before priceWithoutReduction}}
+                    </del>
+                {{/if}}
+                <span class="price-with-reduction">
+                    {{{_ price.after priceWithReduction}}}
+                </span>
+            </p>
+        </div>
+        <ul class="list-group text-center">
+            {{#each li}}
+                <li class="list-group-item">
+                    <i class="fa fa-check"></i>
+                    {{_ this}}
+                </li>
+            {{/each}}
+        </ul>
+        <div class="panel-footer text-left">
+            {{#if form}}
+                <button class="info btn btn-lg btn-block btn-{{buttonClass}}">
+                    <i class="fa fa-info-circle"></i>
+                    {{_ button}}
+                </button>
+                <form class="form-info">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default increase-number" type="button">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </span>
+                        <input class="form-control number" type="number" value="{{formValue}}" min="{{form.min}}" max="{{form.max}}">
+                        <span class="input-group-addon">
+                            {{_ form.helpText count=helpTextCount}}
+                        </span>
+                    </div>
+                </form>
+            {{/if}}
+        </div>
+    </div>
+</template>

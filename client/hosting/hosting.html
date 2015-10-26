@@ -1,0 +1,38 @@
+<template name="hosting">
+    <div id="hosting">
+        <div class="jumbotron">
+            <div class="container">
+                <h1>
+                    <i class="fa fa-server"></i>
+                    {{_ 'template.hosting.title'}}
+                </h1>
+                <p>{{_ 'template.hosting.description'}}</p>
+            </div>
+        </div>
+        <div class="content">
+            <section id="offers">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            {{> hostingBasic}}
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            {{> hostingPremium}}
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            {{> hostingVPS}}
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="separator">
+                <div class="container">
+                    <h2>
+                        <i class="fa fa-shield"></i>
+                        Et la sécurité dans tout ça ?
+                    </h2>
+                </div>
+            </section>
+        </div>
+    </div>
+</template>
