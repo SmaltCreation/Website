@@ -8,3 +8,27 @@
 #home #why p:last-of-type {
     margin-bottom: 0;
 }
+
+#home #why .carousel .carousel-control i {
+    font-size: 30px;
+    height: 30px;
+    margin-top: 125px;
+    width: 30px;
+    color: #333;
+}
+
+#home #why .carousel-indicators li {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    width: 10px;
+}
+
+#home #why .carousel-control.left, #home #why .carousel-control.right {
+    background-image: none;
+}
