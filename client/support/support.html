@@ -1,0 +1,53 @@
+<template name="support">
+    <div id="support">
+        <div class="jumbotron">
+            <div class="container">
+                <h1>
+                    <i class="fa fa-support"></i>
+                    {{_ 'template.support.title'}}
+                </h1>
+                <p>{{_ 'template.support.description'}}</p>
+            </div>
+        </div>
+        <div class="content">
+            <section id="offers">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            {{> supportUnity}}
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            {{> supportSubscription}}
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="support-text well">
+                                <h3>
+                                    {{{_ 'template.support.texts.free.title'}}}
+                                </h3>
+                                <p class="text-muted">
+                                    {{_ 'template.support.texts.free.text'}}
+                                </p>
+                            </div>
+                            <div class="support-text well">
+                                <h3>
+                                    {{{_ 'template.support.texts.continue.title'}}}
+                                </h3>
+                                <p class="text-muted">
+                                    {{_ 'template.support.texts.continue.text'}}
+                                </p>
+                            </div>
+                            <div class="support-text well">
+                                <h3>
+                                    {{{_ 'template.support.texts.accurate.title'}}}
+                                </h3>
+                                <p class="text-muted">
+                                    {{_ 'template.support.texts.accurate.text'}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</template>

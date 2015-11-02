@@ -62,6 +62,12 @@ function getType (type) {
         case 'securitySSL':
             result = SecuritySSL;
             break;
+        case 'supportUnity':
+            result = SupportUnity;
+            break;
+        case 'supportSubscription':
+            result = SupportSubscription;
+            break;
         default:
             throw new Error('Invalid type');
     }

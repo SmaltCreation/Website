@@ -109,7 +109,7 @@
         "projects": "Nos réalisations",
         "services": "Nos services",
         "skills": "Nos compétences",
-        "why-meteor": "Pourquoi MeteorJS"
+        "why-meteor": "Pourquoi"
       },
       "footer": {
         "left": {
@@ -196,7 +196,7 @@
     },
     "hosting": {
       "basic": {
-        "title": "Hébergement basic",
+        "title": "Hébergement basique",
         "discount": "%s",
         "price": "<strong>%s €</strong> <small>TTC</small>",
         "li": {
@@ -250,6 +250,11 @@
       "title": "Hébergements",
       "description": "Nos hébergements sont adaptés à vos besoins. De l'installation du système à la mise en production de votre site, nous nous chargeons de tout."
     },
+    "project": {
+      "show": {
+        "external-link": "Lien externe du projet"
+      }
+    },
     "security":{
       "ssl": {
         "title": "Certificat SSL",
@@ -268,10 +273,57 @@
         }
       }
     },
-    "project": {
-      "show": {
-        "external-link": "Lien externe du projet"
-      }
+    "support": {
+      "unity": {
+        "title": "À l'unité",
+        "discount": "%s",
+        "price": "<strong>%s €</strong> <small>TTC</small>",
+        "li": {
+          "tracking": "Un meilleur suivi",
+          "fast": "Une réponse rapide",
+          "contact": "Un contact technique",
+          "scalability": "Une offre flexible"
+        },
+        "info": "Tarifs horaires",
+        "form": {
+          "help-text": "heures"
+        }
+      },
+      "subscription": {
+        "title": "Abonnement mensuel",
+        "discount": "%s",
+        "price": "<strong>%s €</strong> <small>TTC</small>",
+        "li": {
+          "hours": "Pour 8 heures de support",
+          "cheap": "Une formule économique",
+          "purchase": "Un renouvellement facile",
+          "scalability": "Un nombre d'heure adaptable"
+        },
+        "info": "Tarifs mensuels",
+        "form": {
+          "help-text": "mois"
+        }
+      },
+      "texts": {
+        "free": {
+          "title": "<i class=\"fa fa-check-circle-o\"></i> Un suivi gratuit <small>pendant 1 mois </small>",
+          "text": "Dès la mise en production de vos projets, nous assurons un mois de support gratuit."
+        },
+        "continue": {
+          "title": "<i class=\"fa fa-repeat\"></i> Un suivi continu",
+          "text": "N'ayez plus peur des agences qui ne vous donnent plus de nouvelles ou qui vous lâche du jour au lendemain."
+        },
+        "accurate": {
+          "title": "<i class=\"fa fa-search\"></i> Un suivi précis",
+          "text": "La transparence est notre philosophie. Vous ne louperez rien de notre avancement."
+        }
+      },
+      "page": {
+        "title": "Support",
+        "description": "Retrouvez nos solutions de support pour vos projets faits par Smalt Création."
+      },
+      "title": "Support",
+      "description": "Notre support de développement est adapté à vos besoins. Nous faisons en sorte que rien ne nous échappe."
     },
     "why": {
       "meteor": {
