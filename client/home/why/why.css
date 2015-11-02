@@ -17,8 +17,13 @@
     color: #333;
 }
 
+@media (max-width: 767px) {
+    #home #why .carousel .carousel-control i {
+        display: none;
+    }
+}
+
 #home #why .carousel-indicators li {
-    background-color: rgba(0, 0, 0, 0);
     border: 1px solid black;
     border-radius: 10px;
     cursor: pointer;
@@ -27,6 +32,10 @@
     margin: 1px;
     text-indent: -999px;
     width: 10px;
+}
+
+#home #why .carousel-indicators li.active {
+    background-color: #333;
 }
 
 #home #why .carousel-control.left, #home #why .carousel-control.right {
