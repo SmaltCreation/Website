@@ -3,39 +3,14 @@
         {{#each skills}}
             <li>
                 <figure>
-                    <img class="img-circle img-thumbnail grey-scale" src="{{img}}" alt="{{name}}" data-toggle="modal" data-target="#skill-modal-{{slug}}">
+                    <a href="#" data-trigger="focus" role="button" data-toggle="popover" data-placement="top" title="{{name}}" data-content="{{description}}">
+                        <img class="img-circle img-thumbnail grey-scale" src="{{img}}" alt="{{name}}">
+                    </a>
                     <figcaption>
                         <a href="{{url}}" target="_blank">{{name}}</a>
                     </figcaption>
                 </figure>
             </li>
-            <div id="skill-modal-{{slug}}" class="modal fade">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h4 class="modal-title">
-                                <i class="fa fa-flask"></i>
-                                {{_ 'template.home.skills.modal.title' name}}
-                            </h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="media">
-                                <div class="media-left">
-                                    <a href="{{url}}">
-                                        <img src="{{img}}" class="img-circle" alt="{{name}}">
-                                    </a>
-                                </div>
-                                <div class="media-body">
-                                    {{{_ description}}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         {{/each}}
     </ul>
 </template>

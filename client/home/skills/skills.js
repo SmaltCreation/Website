@@ -4,3 +4,7 @@ Template.homeSkills.helpers({
         return Technologies.find(view.selector, view.options).fetch();
     }
 });
+
+Template.homeSkills.onRendered(function () {
+    $('[data-toggle="popover"]').popover();
+});

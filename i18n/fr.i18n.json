@@ -75,7 +75,7 @@
       "description": ""
     },
     "nginx": {
-      "description": ""
+      "description": "Nginx est un serveur web nouvel génération, capable de très grande montée en charge, il est plus performant que le plus traditionnel Apache2."
     },
     "nexmo": {
       "description": ""
@@ -87,7 +87,7 @@
       "description": ""
     },
     "ubuntuServer": {
-      "description": ""
+      "description": "Basé sur Debian, Ubuntu server est à la pointe en ce qui concerne des technologies telle que Docker ou OpenStack"
     },
     "wordpress": {
       "description": ""
