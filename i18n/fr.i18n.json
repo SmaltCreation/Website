@@ -203,7 +203,7 @@
           "domain": "Nom de domaine inclus",
           "disk": "10 Go d'espace disque",
           "email": "10 comptes email",
-          "back-up": "1 sauvegarde par mois",
+          "back-up": "Pas de sauvegarde",
           "data": "200 Mo de données SQL"
         },
         "info": "Tarifs mensuels",
@@ -219,8 +219,8 @@
           "domain": "Nom de domaine inclus",
           "disk": "250 Go d'espace disque",
           "email": "100 comptes email",
-          "back-up": "1 sauvegarde par semaine",
-          "data": "200 Go de données SQL"
+          "back-up": "1 sauvegarde par mois",
+          "data": "2 Go de données SQL"
         },
         "info": "Tarifs mensuels",
         "form": {
@@ -236,7 +236,7 @@
           "disk": "SSD 10 Go",
           "email": "1 compte email",
           "back-up": "1 sauvegarde par mois",
-          "cpu": "2,4 GHz"
+          "cpu": "1 vCore"
         },
         "info": "Tarifs mensuels",
         "form": {
@@ -249,6 +249,24 @@
       },
       "title": "Hébergements",
       "description": "Nos hébergements sont adaptés à vos besoins. De l'installation du système à la mise en production de votre site, nous nous chargeons de tout."
+    },
+    "security":{
+      "ssl": {
+        "title": "Certificat SSL",
+        "discount": "%s",
+        "price": "<strong>%s €</strong> <small>TTC</small>",
+        "li": {
+          "type": "COMODO PositiveSSL",
+          "domain": "Domaine unique",
+          "nopaperwork": "Aucune formalités",
+          "security": "Échanges sécurisés",
+          "seo": "Meilleur référencement"
+        },
+        "info": "Tarifs annuel",
+        "form": {
+          "help-text": "année"
+        }
+      }
     },
     "project": {
       "show": {

@@ -1,7 +1,7 @@
 Template.hostingPremium.helpers({
     options: function () {
         return {
-            panelClass: 'info',
+            panelClass: 'primary',
             type: 'hostingPremium',
             icon: 'fa fa-star',
             title: 'template.hosting.premium.title',
@@ -16,7 +16,7 @@ Template.hostingPremium.helpers({
                 'template.hosting.premium.li.back-up',
                 'template.hosting.premium.li.data'
             ],
-            buttonClass: 'info',
+            buttonClass: 'primary',
             button: 'template.hosting.premium.info',
             form: {
                 value: 1,

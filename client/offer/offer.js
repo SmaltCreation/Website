@@ -59,6 +59,9 @@ function getType (type) {
         case 'hostingVPS':
             result = HostingVPS;
             break;
+        case 'securitySSL':
+            result = SecuritySSL;
+            break;
         default:
             throw new Error('Invalid type');
     }

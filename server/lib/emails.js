@@ -56,4 +56,3 @@ function replaceValues (result, values) {
 
     return result;
 }
-
