@@ -9,6 +9,10 @@
     margin-bottom: 0;
 }
 
+#home #why .carousel {
+    height: 425px;
+}
+
 #home #why .carousel .carousel-control i {
     font-size: 30px;
     height: 30px;
@@ -20,6 +24,24 @@
 @media (max-width: 767px) {
     #home #why .carousel .carousel-control i {
         display: none;
+    }
+}
+
+@media (min-width: 400px) {
+    #home #why .carousel {
+        height: 350px;
+    }
+}
+
+@media (min-width: 768px) {
+    #home #why .carousel {
+        height: 300px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #home #why .carousel {
+        height: 250px;
     }
 }
 
