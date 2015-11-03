@@ -345,6 +345,12 @@
       "title": "Support",
       "description": "Notre support de développement est adapté à vos besoins. Nous faisons en sorte que rien ne nous échappe."
     },
+    "terms": {
+      "page": {
+        "title": "Conditions",
+        "description": "Retrouvez nos conditions générales de ventes et d'utilisations."
+      }
+    },
     "why": {
       "meteor": {
         "home": {
