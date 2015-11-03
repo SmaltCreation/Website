@@ -60,37 +60,37 @@
   },
   "technology": {
     "bootstrap": {
-      "description": "Insert your description here"
+      "description": "Bootstrap est une librairie CSS qui standardise le Web Design. Pratique, léger, minimaliste, le bootstrap se retrouve aujourd'hui sur de nombreux projets"
     },
     "googleMaps": {
-      "description": ""
+      "description": "Avec la montée en puissance du business local, Google Maps est une technologie qu'on se doit de maîtriser et d'utiliser pour répondre aux demandes"
     },
     "javaScript": {
-      "description": ""
+      "description": "Le JavaScript est un langage puissant. Il est aujourd'hui interprèté côté client comme serveur. À la mode, il est au centre de nombreux projets innovants."
     },
     "meteor": {
-      "description": ""
+      "description": "Meteor est un framework JavaScript. Moderne, pratique et performant, il permet de réaliser des applications et sites webs demandant des contraintes techniques assez importantes."
     },
     "mongoDB": {
-      "description": ""
+      "description": "MongoDB est un protocole de base de donnée en vogue. Fonctionnant sur la base du NoSQL, il s'accompagne très bien de JavaScript et de Meteor"
     },
     "nginx": {
-      "description": "Nginx est un serveur web nouvel génération, capable de très grande montée en charge, il est plus performant que le plus traditionnel Apache2."
+      "description": "Nginx est un serveur web nouvel génération, capable de très grandes montées en charge. Il est plus performant que le plus traditionnel Apache2."
     },
     "nexmo": {
-      "description": ""
+      "description": "Avec la montée en puissance du business mobile, Nexmo est une plateforme d'envoie de SMS qu'on se doit de maîtriser et d'utiliser pour répondre aux demandes"
     },
     "stripe": {
-      "description": ""
+      "description": "Le marché des transactions en ligne évolue et Stripe, plateforme de paiement en ligne de plus en plus utilisé, possède de nombreux avantages que PayPal n'a pas."
     },
     "symfony2": {
-      "description": ""
+      "description": "Symfony2 est un framework PHP qui inspire la sûreté et la stabilité. Très présent sur le marché français, il est aux commandes de sites énormes."
     },
     "ubuntuServer": {
-      "description": "Basé sur Debian, Ubuntu server est à la pointe en ce qui concerne des technologies telle que Docker ou OpenStack"
+      "description": "Basé sur Debian, Ubuntu server est à la pointe en ce qui concerne les technologies telles que Docker ou OpenStack"
     },
     "wordpress": {
-      "description": ""
+      "description": "Wordpress est un CMS spécialement conçu pour le référencement. Vous avez besoin d'un blog, d'un site vitrine pour votre entreprise ? C'est la technologie qu'il vous faut."
     }
   },
   "template": {
@@ -149,7 +149,7 @@
         "text": "Agence web et start-up basée sur Lyon, Smalt est une société spécialisée dans le <strong>développement de sites et d'applications</strong>.<span class=\"hidden-xs hidden-sm\"><br>L'informatique évoluant, nous développons des applications performantes et attractives dans un esprit collaboratif et professionnel.</span>"
       },
       "page": {
-        "title": "Développement web Lyon - Expert MeteorJS",
+        "title": "Développement web Lyon - MeteorJS",
         "description": "Agence de développement web répondant de manière innovante aux nouvelles demandes, Smalt Création travaille sur MeteorJS, Javascript en général et Symfony2."
       },
       "portfolio": {
@@ -243,6 +243,44 @@
           "help-text": "mois"
         }
       },
+      "security":{
+        "ssl": {
+          "title": "Certificat SSL",
+          "discount": "%s",
+          "price": "<strong>%s €</strong> <small>TTC</small>",
+          "li": {
+            "type": "COMODO PositiveSSL",
+            "domain": "Domaine unique",
+            "nopaperwork": "Aucune formalités",
+            "security": "Échanges sécurisés",
+            "seo": "Meilleur référencement"
+          },
+          "info": "Tarifs annuel",
+          "form": {
+            "help-text": "année"
+          }
+        },
+        "title": "La sécurité de votre projet",
+        "wells": {
+          "exchange": {
+            "title": "<i class=\"fa fa-exchange\"></i> Des échanges <strong>sécurisés</strong>",
+            "text": "Le protocole <strong>SSL (Secure Sockets Layer)</strong> sécurise les flux d’informations transmis entre votre site et vos internautes. Il vous garanti la confidentialité des transferts d’information ainsi que l'assurance que votre site soit hébergé sur nos serveurs, garanti par le <em class=\"green\">https</em> et le <strong class=\"green\"><i class=\"fa fa-lock\"></i></strong>."
+          },
+          "standard": {
+            "title": "<i class=\"fa fa-trademark\"></i> Un protocole <strong>standardisé</strong>",
+            "text": "Le <strong>SSL</strong> est aujourd'hui le protocole de sécurisation des échanges par excellence, il est utilisé par absolument tous les navigateurs modernes tel que :",
+            "brands": {
+              "ff": "<i class=\"fa fa-firefox\"></i> Modzilla Firefox",
+              "chrome": "<i class=\"fa fa-chrome\"></i> Google Chrome",
+              "ie": "<i class=\"fa fa-internet-explorer\"></i> Microsoft Internet Explorer"
+            }
+          },
+          "seo": {
+            "title": "<i class=\"fa fa-level-up\"></i> Être mieux <strong>référencé</strong>",
+            "text": "Les moteurs de recherche prennent en compte la sécurité d'un site web, pour un site officiel ou de e-commerce, disposé d'un <strong>certificat</strong> valide et aux dernières normes est un minimum pour prétendre à un bon référencement sur internet."
+          }
+        }
+      },
       "page": {
         "title": "Hébergements",
         "description": "Retrouvez nos solutions d'hébergements. Que ce soit un serveur mutualisé, un VPS classic ou un serveur dédié, nous avons la formule adaptée à vos besoins."
@@ -253,24 +291,6 @@
     "project": {
       "show": {
         "external-link": "Lien externe du projet"
-      }
-    },
-    "security":{
-      "ssl": {
-        "title": "Certificat SSL",
-        "discount": "%s",
-        "price": "<strong>%s €</strong> <small>TTC</small>",
-        "li": {
-          "type": "COMODO PositiveSSL",
-          "domain": "Domaine unique",
-          "nopaperwork": "Aucune formalités",
-          "security": "Échanges sécurisés",
-          "seo": "Meilleur référencement"
-        },
-        "info": "Tarifs annuel",
-        "form": {
-          "help-text": "année"
-        }
       }
     },
     "support": {
