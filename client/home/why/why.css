@@ -1,8 +1,8 @@
 #home #why {
-    background: #fcfcfc url("/images/_tesselate.svg");
+    background: #555;
     background-size: 500px;
     border-top: 1px solid #333;
-    border-bottom: 1px solid #333;
+    color: #f5f5f5;
 }
 
 #home #why p:last-of-type {
@@ -18,7 +18,7 @@
     height: 30px;
     margin-top: 125px;
     width: 30px;
-    color: #333;
+    color: #fcfcfc;
 }
 
 @media (max-width: 767px) {
@@ -43,21 +43,6 @@
     #home #why .carousel {
         height: 250px;
     }
-}
-
-#home #why .carousel-indicators li {
-    border: 1px solid black;
-    border-radius: 10px;
-    cursor: pointer;
-    display: inline-block;
-    height: 10px;
-    margin: 1px;
-    text-indent: -999px;
-    width: 10px;
-}
-
-#home #why .carousel-indicators li.active {
-    background-color: #333;
 }
 
 #home #why .carousel-control.left, #home #why .carousel-control.right {

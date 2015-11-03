@@ -1,9 +1,11 @@
 #home #contact {
-    background: #27272b url("/images/_map-image.png");
+    background: #fcfcfc url("/images/_map-image-inverse.png");
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     padding: 50px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
 @media (min-width: 992px) {
