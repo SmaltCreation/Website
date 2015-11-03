@@ -34,12 +34,12 @@
                          data-id="{{id}}"
                          data-name="{{name}}"
                          data-importance="{{importance}}">
-                        <a href="{{pathFor 'projectShow' id=id slug=slug}}" class="preview">
-                            <img src="{{img}}" alt="{{name}}">
+                        <a href="{{img}}" class="preview fancybox" rel="home-portfolio">
+                            <img src="{{thumbnail}}" alt="{{name}}">
                         </a>
                         <div class="caption">
                             <h4>
-                                <a href="{{url}}" class="name" target="_blank">
+                                <a href="{{pathFor 'projectShow' id=id slug=slug}}" class="name">
                                     <i class="fa fa-external-link-square"></i>
                                     {{name}}
                                 </a>

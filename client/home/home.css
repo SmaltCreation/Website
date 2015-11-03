@@ -14,8 +14,8 @@
 
 #home header .filter {
     width: 100%;
-    background: rgba(0, 51, 153, 0.20);
-    padding: 75px 0 100px;
+    background: rgba(0, 51, 153, 0.50);
+    padding: 75px 0 25px;
 }
 
 #home header .brand {
@@ -53,6 +53,11 @@
     color: #c1fffd;
 }
 
+#home header .address {
+    color: #fff;
+    font-size: 15px;
+}
+
 #home header .banner-separator {
     height: 50px;
     background: transparent url("/images/home-banner-separator.png");
@@ -70,7 +75,8 @@
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     #home header .filter {
-        padding-top: 90px;
+        padding: 90px 0 65px;
+        background: rgba(0, 51, 153, 0.20);
     }
     #home header h1 {
         font-size: 40px;
@@ -81,12 +87,15 @@
     #home header .banner-separator {
         height: 120px;
     }
+    #home header .address {
+        font-size: 17px;
+    }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     #home header .filter {
-        padding-top: 100px;
+        padding: 100px 0 75px;
     }
     #home header h1 {
         font-size: 50px;
@@ -102,7 +111,7 @@
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     #home header .filter {
-        padding-top: 125px;
+        padding: 125px 0 100px;
     }
     #home header .banner-separator {
         height: 230px;

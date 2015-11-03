@@ -21,7 +21,9 @@
                 <p>
                     {{_ project.description}}
                 </p>
-                <img class="img-thumbnail img-responsive" src="{{project.img}}">
+                <a href="{{project.img}}" class="fancybox" title="{{project.name}}">
+                    <img class="img-thumbnail img-responsive" src="{{project.thumbnail}}" alt="{{project.name}}">
+                </a>
             </div>
         </div>
     </div>

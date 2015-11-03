@@ -31,6 +31,9 @@ Template.homePortfolio.onRendered(function () {
     // Wait that images are fully loaded to forge the grid **Essential for items's width**
     grid.imagesLoaded().progress(function () {
         grid.isotope({ sortBy : 'importance' });
+        $('.fancybox').fancybox({
+            openEffect: 'elastic'
+        });
     });
 
     // Retrieve filters container

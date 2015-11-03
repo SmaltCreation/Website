@@ -1,10 +1,20 @@
 <template name="home">
-    <div id="home">
+    <div id="home" itemscope itemtype="http://schema.org/Corporation">
         <header>
             <div class="filter">
                 <div class="container">
-                    <h1 class="brand animated bounce">{{_ 'template.home.header.brand'}}</h1>
-                    <p>{{{_ 'template.home.header.text'}}}</p>
+                    <h1 class="brand animated bounce" itemprop="name">{{_ 'template.home.header.brand'}}</h1>
+                    <p itemprop="description">{{{_ 'template.home.header.text'}}}</p>
+                    <ul class="list-inline address">
+                        <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress ">
+                            <i class="fa fa-map-marker"></i>
+                            {{{_ 'template.home.header.address'}}}
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <span itemprop="telephone">{{_ 'info.phone'}}</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </header>

@@ -1,5 +1,17 @@
 // Please preserve the alphabetical order for templates
 {
+  "info": {
+    "name": "Smalt Création",
+    "address": {
+      "compact": "16 rue Jean Desparmet, 69008 Lyon",
+      "street": "16 rue Jean Desparmet",
+      "zip-code": "69008",
+      "city": "Lyon",
+      "coutry": "France"
+    },
+    "phone": "06 29 30 19 47",
+    "email": "contact@smaltcreation.com"
+  },
   "project": {
     "crlive": {
       "description": "Le forum permanent des associations de la Croix-rousse sur Lyon."
@@ -146,7 +158,8 @@
       },
       "header": {
         "brand": "Smalt Création",
-        "text": "Agence web et start-up basée sur Lyon, Smalt est une société spécialisée dans le <strong>développement de sites et d'applications</strong>.<span class=\"hidden-xs hidden-sm\"><br>L'informatique évoluant, nous développons des applications performantes et attractives dans un esprit collaboratif et professionnel.</span>"
+        "text": "Agence web et start-up basée sur Lyon, Smalt est une société spécialisée dans le <strong>développement de sites et d'applications</strong>.<span class=\"hidden-xs hidden-sm\"><br>L'informatique évoluant, nous développons des applications performantes et attractives dans un esprit collaboratif et professionnel.</span>",
+        "address": "<span itemprop=\"streetAddress\">16 Rue Jean Desparmet</span>, <span itemprop=\"postalCode\">69008</span> <span itemprop=\"addressLocality\">Lyon</span>"
       },
       "page": {
         "title": "Développement web Lyon - MeteorJS",
@@ -173,7 +186,7 @@
         "box": {
           "development": {
             "title": "Développement",
-            "text": "Nous utilisons des technologies performantes et innovantes afin de proposer des applications toujours dans l'aire du temps. Connaissez-vous peut-être <a href=\"http://meteor.com\">MeteorJS</a> ou <a href=\"http://symfony.com\">Symfony2</a> ?",
+            "text": "Nous utilisons des technologies performantes et innovantes afin de proposer des applications toujours dans l'ère du temps. Connaissez-vous peut-être <a href=\"http://meteor.com\">MeteorJS</a> ou <a href=\"http://symfony.com\">Symfony2</a> ?",
             "link": "Comment ça marche"
           },
           "hosting": {

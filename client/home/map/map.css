@@ -1,3 +1,9 @@
+#home #map .map-filter {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+}
+
 #home #map iframe {
     height: 100%;
     border-top: 1px solid #cccccc;
@@ -6,24 +12,28 @@
 
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
+    #home #map .map-filter,
     #home #map {
         height: 200px;
     }
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
+    #home #map .map-filter,
     #home #map {
         height: 200px;
     }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) {
+    #home #map .map-filter,
     #home #map {
         height: 250px;
     }
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    #home #map .map-filter,
     #home #map {
         height: 300px;
     }
