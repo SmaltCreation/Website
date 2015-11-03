@@ -109,7 +109,7 @@
         "projects": "Nos réalisations",
         "services": "Nos services",
         "skills": "Nos compétences",
-        "why-meteor": "Pourquoi"
+        "why": "Pourquoi ?"
       },
       "footer": {
         "left": {
@@ -367,6 +367,14 @@
             "lightweight": "Freebooters sing on courage at rummage island!"
           }
         }
+      },
+      "ubuntu": {
+        "title": "<i class=\"fa fa-commenting\"></i> Pourquoi choisir Ubuntu Server ?",
+        "texts": {
+          "description": "<strong>Basé sur Debian, Ubuntu Server est le systeme que nous utilisons sur nos serveurs.</strong> Performant et disposant de l'immense bibliothèque Canonical, cet OS est de plus en plus utiliser aujourd'hui.<br> Chez Smalt, nous sommes toujours à l'avant-garde, c'est pourquoi nous travaillons les dernière technologies du marché",
+          "modern": " <strong><i class=\"fa fa-star\"></i> Une porte vers le future.</strong> Nous n'hésitons pas à travailler avec des technologies telles que <a href=\"https:\//www.docker.com/\"><strong>Docker</strong></a> ou <a href=\"https://www.openstack.org/\"><strong>OpenStack</strong></a>"
+        },
+        "button": "Découvrir Ubuntu Server"
       }
     }
   }
