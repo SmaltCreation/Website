@@ -1,6 +1,7 @@
 #home #map iframe {
     height: 100%;
     border-top: 1px solid #cccccc;
+    pointer-events: none;
 }
 
 /* Extra small devices (phones, less than 768px) */
