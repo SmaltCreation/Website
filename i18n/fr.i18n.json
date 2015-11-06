@@ -213,7 +213,7 @@
         "discount": "%s",
         "price": "<strong>%s €</strong> <small>TTC</small>",
         "li": {
-          "domain": "Nom de domaine inclus",
+          "domain": "Nom de domaine offert pendant 1 an",
           "disk": "10 Go d'espace disque",
           "email": "10 comptes email",
           "back-up": "Pas de sauvegarde",
@@ -229,7 +229,7 @@
         "discount": "%s",
         "price": "<strong>%s €</strong> <small>TTC</small>",
         "li": {
-          "domain": "Nom de domaine inclus",
+          "domain": "Nom de domaine offert pendant 1 an",
           "disk": "250 Go d'espace disque",
           "email": "100 comptes email",
           "back-up": "1 sauvegarde par mois",
@@ -245,7 +245,7 @@
         "discount": "%s",
         "price": "<strong>%s €</strong> <small>TTC</small>",
         "li": {
-          "domain": "Nom de domaine inclus",
+          "domain": "Nom de domaine offert pendant 1 an",
           "disk": "SSD 10 Go",
           "email": "1 compte email",
           "back-up": "1 sauvegarde par mois",
