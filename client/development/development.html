@@ -1,0 +1,91 @@
+<template name="development">
+    <div id="development">
+        <div class="jumbotron">
+            <div class="container">
+                <h1>
+                    <i class="fa fa-code"></i>
+                    {{_ 'template.development.title'}}
+                </h1>
+                <p>{{_ 'template.development.description'}}</p>
+            </div>
+        </div>
+        <div class="content">
+            <section class="development-beginning">
+                <div class="container">
+                    <div class="pictured">
+                        <img src="/images/development-beginning.svg" class="picture">
+                        <h2>
+                            {{_ 'template.development.sections.beginning.title'}}
+                        </h2>
+                        <p class="text-muted">
+                            {{_ 'template.development.sections.beginning.text'}}
+                        </p>
+                        <p>
+                            <a href="{{pathFor 'home'}}#contact" class="btn btn-default">
+                                <i class="fa fa-envelope"></i>
+                                {{_ 'template.development.sections.beginning.button'}}
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="development-processing separator">
+                <div class="container">
+                    <div class="pictured">
+                        <img src="/images/development-processing.svg" class="picture picture-right">
+                        <h2>
+                            {{_ 'template.development.sections.processing.title'}}
+                        </h2>
+                        <p class="text-muted">
+                            {{_ 'template.development.sections.processing.text'}}
+                        </p>
+                        <p>
+                            <a href="{{pathFor 'home'}}#portfolio" class="btn btn-default">
+                                <i class="fa fa-picture-o"></i>
+                                {{_ 'template.development.sections.processing.button'}}
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="development-ending">
+                <div class="container">
+                    <div class="pictured">
+                        <img src="/images/development-ending.svg" class="picture">
+                        <h2>
+                            {{_ 'template.development.sections.ending.title'}}
+                        </h2>
+                        <p class="text-muted">
+                            {{_ 'template.development.sections.ending.text'}}
+                        </p>
+                        <p>
+                            <a href="{{pathFor 'hosting'}}#contact" class="btn btn-default">
+                                <i class="fa fa-server"></i>
+                                {{_ 'template.development.sections.ending.button'}}
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="development-support separator">
+                <div class="container">
+                    <div class="pictured">
+                        <img src="/images/development-support.svg" class="picture picture-right">
+                        <h2>
+                            {{_ 'template.development.sections.support.title'}}
+                        </h2>
+                        <p class="text-muted">
+                            {{_ 'template.development.sections.support.text'}}
+                        </p>
+                        <p>
+                            <a href="{{pathFor 'support'}}" class="btn btn-default">
+                                <i class="fa fa-life-ring"></i>
+                                {{_ 'template.development.sections.support.button'}}
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</template>

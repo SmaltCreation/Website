@@ -134,6 +134,36 @@
         }
       }
     },
+    "development": {
+      "title": "Développement",
+      "description": "Vous avez un projet à réaliser ? Découvrez notre manière de fonctionner.",
+      "page": {
+        "title": "Développement",
+        "description": "Découvrez comment nous procédons, notre manière de fonctionner sur les projets que nous réalisons."
+      },
+      "sections": {
+        "beginning": {
+          "title": "1. Le premier contact",
+          "text": "C'est pendant cette phase que nous cernons au mieux votre demande. En effet, nous définissons ensemble, bien souvent dans nos locaux, un cahier des charges adapté à votre activité. Nous réalisons par la suite un devis correspondant à votre demande. Si vous êtes partant, nous commençons le travail à la signiature de ce devis.",
+          "button": "Nous contacter"
+        },
+        "processing": {
+          "title": "2. La phase de développement",
+          "text": "Le développement est la phase la plus longue de votre projet. Selon la taille de celui-ci, elle peut prendre une semaine comme plusieurs mois. Nous travaillons de manière Agile et nous donnons tout au long du projet le plus d'informations possible pour nos clients. Nous vous accompagnons dans vos idées et nous vous conseillons pour réaliser un travail complet et dans les temps.",
+          "button": "Notre portfolio"
+        },
+        "ending": {
+          "title": "3. La mise en production",
+          "text": "Après le développement vient l'étape de la mise en production. Il s'agit du lancement de votre projet, l'installer sur un serveur et la rendre accessible au monde entier. Si vous avez choisi une de nos offres d'hébergement, nous nous en occupons, le cas échéans nous vous donnons tout les outils pour permettre un déploiement facile et rapide de votre projet. Nous commencons tout d'abord par installer l'appilication sur un serveur de pré-production, sur lequel nous faisont tout les tests nécessaire pour garantir la qualité de votre produit. Une fois toute les vérification effectué, nous déploiont votre projet sur nos serveurs hébergé en France.",
+          "button": "Nos offres d'hébergement"
+        },
+        "support": {
+          "title": "4. Le support technique",
+          "text": "Pour garantir la fiabilité de votre application, nous assurons un mois de support sur les projets que nous développons et hébergeons. Nous proposons également des offres pour des durée étendu pour que votre application soit toujours à la pointe des dernières nouveautés.",
+          "button": "Nos offres de support"
+        }
+      }
+    },
     "home": {
       "contact": {
         "title": "<i class=\"fa fa-envelope\"></i> Nous contacter"
@@ -213,7 +243,7 @@
         "discount": "%s",
         "price": "<strong>%s €</strong> <small>TTC</small>",
         "li": {
-          "domain": "Nom de domaine offert pendant 1 an",
+          "domain": "Nom de domaine inclus",
           "disk": "10 Go d'espace disque",
           "email": "10 comptes email",
           "back-up": "Pas de sauvegarde",
@@ -229,7 +259,7 @@
         "discount": "%s",
         "price": "<strong>%s €</strong> <small>TTC</small>",
         "li": {
-          "domain": "Nom de domaine offert pendant 1 an",
+          "domain": "Nom de domaine inclus",
           "disk": "250 Go d'espace disque",
           "email": "100 comptes email",
           "back-up": "1 sauvegarde par mois",

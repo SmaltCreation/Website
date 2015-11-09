@@ -1,0 +1,12 @@
+#development .pictured h2 {
+    margin-top: 0;
+}
+
+#development .pictured {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+#development section.separator .pictured {
+    text-align: right;
+}
