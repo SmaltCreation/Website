@@ -12,5 +12,8 @@
   },
   "CONTACT": {
     "SEND_TO": "contact@smaltcreation.com"
+  },
+  "ga": {
+    "id": "UA-55566811-1"
   }
 }
