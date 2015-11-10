@@ -7,4 +7,8 @@ Template.homeSkills.helpers({
 
 Template.homeSkills.onRendered(function () {
     $('[data-toggle="popover"]').popover();
+
+    $('#home-skills').viewportChecker({
+        classToAdd: 'visible animated fadeInRight'
+    });
 });

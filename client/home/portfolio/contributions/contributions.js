@@ -4,3 +4,9 @@ Template.homePortfolioContributions.helpers({
         return Projects.find(view.selector, view.options).fetch();
     }
 });
+
+Template.homePortfolioContributions.rendered = function () {
+    $('.invisible').viewportChecker({
+        classToAdd: 'visible animated fadeInUp'
+    });
+};
