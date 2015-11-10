@@ -1,0 +1,11 @@
+.viewport.invisible,
+#home #announce-list .announce-preview,
+#home #announce-list .profile-preview{
+    visibility: hidden;
+}
+
+.viewport.visible,
+#home #announce-list .announce-preview.visible,
+#home #announce-list .profile-preview.visible {
+    visibility: visible;
+}

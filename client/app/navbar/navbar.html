@@ -8,7 +8,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="{{pathFor 'home'}}#" class="navbar-brand">
+                <a href="{{pathFor 'home' hash=''}}" class="navbar-brand">
                     <img alt="Brand" src="/images/navbar-brand.png">
                 </a>
             </div>
@@ -16,31 +16,25 @@
             <div id="navbar-collapse" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a class="anchor" href="{{pathFor 'home'}}#description">
+                        <a class="anchor" href="{{pathFor 'home' hash='description'}}">
                             <i class="fa fa-certificate"></i>
                             <span class="shrink">{{_ 'template.app.navbar.services'}}</span>
                         </a>
                     </li>
                     <li>
-                        <a class="anchor" href="{{pathFor 'home'}}#skills">
+                        <a class="anchor" href="{{pathFor 'home' hash='skills'}}">
                             <i class="fa fa-flask"></i>
                             <span class="shrink">{{_ 'template.app.navbar.skills'}}</span>
                         </a>
                     </li>
                     <li>
-                        <a class="anchor" href="{{pathFor 'home'}}#portfolio">
+                        <a class="anchor" href="{{pathFor 'home' hash='portfolio'}}">
                             <i class="fa fa-code"></i>
                             <span class="shrink">{{_ 'template.app.navbar.projects'}}</span>
                         </a>
                     </li>
                     <li>
-                        <a class="anchor" href="{{pathFor 'home'}}#why">
-                            <i class="fa fa-question-circle"></i>
-                            <span class="shrink">{{_ 'template.app.navbar.why'}}</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="anchor" href="{{pathFor 'home'}}#contact">
+                        <a class="anchor" href="{{pathFor 'home' hash='contact'}}">
                             <i class="fa fa-envelope"></i>
                             <span class="shrink">{{_ 'template.app.navbar.contact'}}</span>
                         </a>
