@@ -1,6 +1,6 @@
 <template name="homePortfolioContributions">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
             <h3>
                 <i class="fa fa-code-fork"></i>
                 {{_ 'template.home.portfolio.contributions.title'}}
@@ -23,30 +23,6 @@
                     </li>
                 {{/each}}
             </ul>
-        </div>
-        <div class="col-md-6">
-            <h3>
-                <i class="fa fa-newspaper-o"></i>
-                {{_ 'template.home.portfolio.articles.title'}}
-            </h3>
-            {{#if articles}}
-                <article class="media invisible article">
-                    <div class="media-left">
-                        <a href="{{url}}">
-                            <img class="media-object" src="{{img}}" data-holder-rendered="true">
-                        </a>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">{{title}}</h4>
-                        {{content}}
-                    </div>
-                </article>
-            {{else}}
-                <p>
-                    {{_ 'template.home.portfolio.articles.none'}}
-                    <i class="fa fa-smile-o"></i>
-                </p>
-            {{/if}}
         </div>
     </div>
 </template>

@@ -1,7 +1,7 @@
 Template.hostingBasic.helpers({
     options: function () {
         return {
-            panelClass: 'info',
+            panelClass: 'primary',
             type: 'hostingBasic',
             icon: 'fa fa-star-half-o',
             title: 'template.hosting.basic.title',
@@ -16,7 +16,7 @@ Template.hostingBasic.helpers({
                 'template.hosting.basic.li.back-up',
                 'template.hosting.basic.li.data'
             ],
-            buttonClass: 'info',
+            buttonClass: 'primary',
             button: 'template.hosting.basic.info',
             form: {
                 value: 1,

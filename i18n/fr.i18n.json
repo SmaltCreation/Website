@@ -245,7 +245,7 @@
         "li": {
           "domain": "Nom de domaine inclus",
           "disk": "10 Go d'espace disque",
-          "email": "10 comptes email",
+          "email": "10 comptes email 5Go",
           "back-up": "Pas de sauvegarde",
           "data": "200 Mo de données SQL"
         },
@@ -261,7 +261,7 @@
         "li": {
           "domain": "Nom de domaine inclus",
           "disk": "250 Go d'espace disque",
-          "email": "100 comptes email",
+          "email": "100 comptes email 5Go",
           "back-up": "1 sauvegarde par mois",
           "data": "2 Go de données SQL"
         },
@@ -277,7 +277,7 @@
         "li": {
           "domain": "Nom de domaine offert pendant 1 an",
           "disk": "SSD 10 Go",
-          "email": "1 compte email",
+          "email": "10 comptes email 5Go",
           "back-up": "1 sauvegarde par mois",
           "cpu": "1 vCore"
         },
@@ -329,7 +329,8 @@
         "description": "Retrouvez nos solutions d'hébergements. Que ce soit un serveur mutualisé, un VPS classic ou un serveur dédié, nous avons la formule adaptée à vos besoins."
       },
       "title": "Hébergements",
-      "description": "Nos hébergements sont adaptés à vos besoins. De l'installation du système à la mise en production de votre site, nous nous chargeons de tout."
+      "description": "Nos hébergements sont adaptés à vos besoins. De l'installation du système à la mise en production de votre site, nous nous chargeons de tout.",
+      "asterisk": "* Lorsque que vous souscrivez à un de nos abonnements, vous vous engagez pour un an. Sur cette année, vous pouvez régler par trimestre, semestre ou à l'année."
     },
     "project": {
       "show": {

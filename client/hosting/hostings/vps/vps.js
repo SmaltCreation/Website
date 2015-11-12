@@ -1,7 +1,7 @@
 Template.hostingVPS.helpers({
     options: function () {
         return {
-            panelClass: 'info',
+            panelClass: 'primary',
             type: 'hostingVPS',
             icon: 'fa fa-terminal',
             title: 'template.hosting.vps.title',
@@ -16,7 +16,7 @@ Template.hostingVPS.helpers({
                 'template.hosting.vps.li.back-up',
                 'template.hosting.vps.li.cpu'
             ],
-            buttonClass: 'info',
+            buttonClass: 'primary',
             button: 'template.hosting.vps.info',
             form: {
                 value: 1,
