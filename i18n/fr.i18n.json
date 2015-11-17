@@ -238,6 +238,11 @@
       }
     },
     "hosting": {
+      "onDemand": {
+        "title": "Besoin de plus de puissance ?",
+        "text": "Votre projet a des besoins bien précis ? Vous souhaitez bénéficier d'une infrastructure sur mesure ?",
+        "button": "Contactez-nous"
+      },
       "basic": {
         "title": "Hébergement basique",
         "discount": "%s",

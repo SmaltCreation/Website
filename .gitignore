@@ -1,2 +1,4 @@
 .idea
 .meteor/local
+mup*
+settings*

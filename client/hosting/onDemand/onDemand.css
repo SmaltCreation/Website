@@ -1,0 +1,10 @@
+#onDemand {
+    background: #fcfcfc url("/images/_tesselate.svg");
+    background-size: 500px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #333;
+}
+
+#onDemand p:last-of-type {
+    margin-bottom: 0;
+}
