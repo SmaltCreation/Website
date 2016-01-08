@@ -363,7 +363,7 @@
         "discount": "%s",
         "price": "<strong>%s €</strong> <small>TTC</small>",
         "li": {
-          "hours": "Pour 8 heures de support",
+          "hours": "8 heures de support",
           "cheap": "Une formule économique",
           "purchase": "Un renouvellement facile",
           "scalability": "Un nombre d'heure adaptable"
@@ -376,7 +376,7 @@
       "texts": {
         "free": {
           "title": "<i class=\"fa fa-check-circle-o\"></i> Un suivi gratuit <small>pendant 1 mois </small>",
-          "text": "Dès la mise en production de vos projets, nous assurons un mois de support gratuit."
+          "text": "Dès la mise en production de vos projets, nous assurons gratuitement un mois de support. De plus, si nous avons développé votre projet et que nous l'hébergeons, vous bénéficiez gratuitement d'une heure de support par mois."
         },
         "continue": {
           "title": "<i class=\"fa fa-repeat\"></i> Un suivi continu",
