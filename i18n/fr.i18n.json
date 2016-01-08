@@ -316,7 +316,7 @@
           },
           "standard": {
             "title": "<i class=\"fa fa-trademark\"></i> Un protocole <strong>standardisé</strong>",
-            "text": "Le <strong>SSL</strong> est aujourd'hui le protocole de sécurisation des échanges par excellence, il est utilisé par absolument tous les navigateurs modernes tel que :",
+            "text": "Le <strong>SSL</strong> est aujourd'hui le protocole de sécurité des échanges par excellence, il est utilisé par absolument tous les navigateurs modernes tel que :",
             "brands": {
               "ff": "<i class=\"fa fa-firefox\"></i> Modzilla Firefox",
               "chrome": "<i class=\"fa fa-chrome\"></i> Google Chrome",
@@ -325,7 +325,7 @@
           },
           "seo": {
             "title": "<i class=\"fa fa-level-up\"></i> Être mieux <strong>référencé</strong>",
-            "text": "Les moteurs de recherche prennent en compte la sécurité d'un site web, pour un site officiel ou de e-commerce, disposé d'un <strong>certificat</strong> valide et aux dernières normes est un minimum pour prétendre à un bon référencement sur internet."
+            "text": "Les moteurs de recherche prennent en compte la sécurité d'un site web. Un site officiel ou de e-commerce, disposé d'un <strong>certificat</strong> valide et aux dernières normes, est un minimum pour prétendre à un bon référencement sur internet."
           }
         }
       },
@@ -376,11 +376,11 @@
       "texts": {
         "free": {
           "title": "<i class=\"fa fa-check-circle-o\"></i> Un suivi gratuit <small>pendant 1 mois </small>",
-          "text": "Dès la mise en production de vos projets, nous assurons gratuitement un mois de support. De plus, si nous avons développé votre projet et que nous l'hébergeons, vous bénéficiez gratuitement d'une heure de support par mois."
+          "text": "Dès la mise en production de votre projet, nous assurons gratuitement un mois de support. De plus, si nous avons développé votre projet et que nous l'hébergeons, vous bénéficiez gratuitement d'une heure de support par mois."
         },
         "continue": {
           "title": "<i class=\"fa fa-repeat\"></i> Un suivi continu",
-          "text": "N'ayez plus peur des agences qui ne vous donnent plus de nouvelles ou qui vous lâche du jour au lendemain."
+          "text": "N'ayez plus peur des agences qui ne vous donnent plus de nouvelles ou qui vous lâchent du jour au lendemain."
         },
         "accurate": {
           "title": "<i class=\"fa fa-search\"></i> Un suivi précis",
