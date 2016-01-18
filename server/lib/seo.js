@@ -34,10 +34,10 @@ Meteor.startup(function () {
 
     routes.forEach(function (route) {
         SeoCollection.update({
-                route_name: TAPi18n.__(route.name, null, language)
+                route_name: route.name
             }, {
                 $set: {
-                    route_name: 'development',
+                    route_name: route.name,
                     title: TAPi18n.__(route.title, null, language) + TITLE_SUFFIX,
                     meta: {
                         'description': TAPi18n.__(route.description, null, language)
