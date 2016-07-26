@@ -1,0 +1,436 @@
+// Please preserve the alphabetical order for templates
+{
+  "info": {
+    "name": "Smalt Création",
+    "address": {
+      "compact": "16 rue Jean Desparmet, 69008 Lyon",
+      "street": "16 rue Jean Desparmet",
+      "zip-code": "69008",
+      "city": "Lyon",
+      "coutry": "France"
+    },
+    "phone": "06 99 99 99 99",
+    "email": "contact@smaltcreation.com"
+  },
+  "project": {
+    "crlive": {
+      "description": "Le forum permanent des associations de la Croix-rousse sur Lyon."
+    },
+    "icon": {
+      "description": "Élargissez votre réseau en rencontrant directement des contacts près de chez vous."
+    },
+    "inck": {
+      "description": "Site conceptuel cherchant à développer le marché de l'expression et de l'article libre et culturel."
+    },
+    "l7rg": {
+      "description": "Site web et plateforme principale de l'association de management de centre ville de Lyon 7."
+    },
+    "rey-freres": {
+      "description": "Entreprise familiale de mécanique générale qui a voulu booster sa réputation."
+    },
+    "tilamp": {
+      "description": "Le bon coin des artisans, professionels du bâtiment, de l'habitat et des travaux extérieurs."
+    },
+    "paypal-rest-api": {
+      "description": "Package meteor permettant de gérer les transactions PayPal via la REST API."
+    },
+    "autoform-input-addon-icon": {
+      "description": "Package meteor permettant  d'ajouter des icônes aux champs d'<em>autoform</em> façon <em>Bootstrap Addon Icon</em>."
+    },
+    "autoform-intl-tel-input": {
+      "description": "Package meteor permettant d'ajout un champ <em>autoform</em> \"téléphone\" complet et détaillé grâce à <em>intl</em>"
+    },
+    "alert-i18n": {
+      "description": "Package meteor permettant l'internationalisation des messages d'erreur, d'info, d'aveetissement et de succès."
+    },
+    "autoform-file": {
+      "description": "Package meteor améliorant l'upload de fichier tel que les images avec une interface agréable à voir."
+    },
+    "manager": {
+      "description": "ERP minimaliste, il conviendra à toute entreprise qui souhaite mieux gérer ses ressources personnelles."
+    }
+  },
+  "schema": {
+    "contact": {
+      "name": {
+        "label": "Nom",
+        "placeholder": "Votre nom et prénom *"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Votre adresse email *"
+      },
+      "subject": {
+        "label": "Objet",
+        "placeholder": "Objet du message *"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Contenu du message *"
+      }
+    }
+  },
+  "technology": {
+    "bootstrap": {
+      "description": "Bootstrap est une librairie CSS qui standardise le Web Design. Pratique, léger, minimaliste, le bootstrap se retrouve aujourd'hui sur de nombreux projets"
+    },
+    "googleMaps": {
+      "description": "Avec la montée en puissance du business local, Google Maps est une technologie qu'on se doit de maîtriser et d'utiliser pour répondre aux demandes"
+    },
+    "javaScript": {
+      "description": "Le JavaScript est un langage puissant. Il est aujourd'hui interprèté côté client comme serveur. À la mode, il est au centre de nombreux projets innovants."
+    },
+    "meteor": {
+      "description": "Meteor est un framework JavaScript. Moderne, pratique et performant, il permet de réaliser des applications et sites webs demandant des contraintes techniques assez importantes."
+    },
+    "mongoDB": {
+      "description": "MongoDB est un protocole de base de donnée en vogue. Fonctionnant sur la base du NoSQL, il s'accompagne très bien de JavaScript et de Meteor"
+    },
+    "nginx": {
+      "description": "Nginx est un serveur web nouvel génération, capable de très grandes montées en charge. Il est plus performant que le plus traditionnel Apache2."
+    },
+    "nexmo": {
+      "description": "Avec la montée en puissance du business mobile, Nexmo est une plateforme d'envoie de SMS qu'on se doit de maîtriser et d'utiliser pour répondre aux demandes"
+    },
+    "stripe": {
+      "description": "Le marché des transactions en ligne évolue et Stripe, plateforme de paiement en ligne de plus en plus utilisé, possède de nombreux avantages que PayPal n'a pas."
+    },
+    "symfony2": {
+      "description": "Symfony2 est un framework PHP qui inspire la sûreté et la stabilité. Très présent sur le marché français, il est aux commandes de sites énormes."
+    },
+    "ubuntuServer": {
+      "description": "Basé sur Debian, Ubuntu server est à la pointe en ce qui concerne les technologies telles que Docker ou OpenStack"
+    },
+    "wordpress": {
+      "description": "Wordpress est un CMS spécialement conçu pour le référencement. Vous avez besoin d'un blog, d'un site vitrine pour votre entreprise ? C'est la technologie qu'il vous faut."
+    }
+  },
+  "template": {
+    "app": {
+      "contact": {
+        "alert": {
+          "title": "Message envoyé avec succès !",
+          "text": "Votre message nous a bien été transmis. À très bientôt."
+        },
+        "button": "Envoyer votre message"
+      },
+      "navbar": {
+        "home": "Accueil",
+        "company": "L'entreprise",
+        "contact": "Nous contacter",
+        "projects": "Nos réalisations",
+        "services": "Nos services",
+        "skills": "Nos compétences",
+        "why": "Pourquoi ?"
+      },
+      "footer": {
+        "left": {
+          "text": "SMALT CREATION ­ SAS au capital de 2 100 € ­ SIREN 803881028 R.C.S. Lyon"
+        },
+        "right": {
+          "projects": "Portfolio",
+          "services": "Services",
+          "terms": "Conditions"
+        }
+      }
+    },
+    "development": {
+      "title": "Développement",
+      "description": "Vous avez un projet à réaliser ? Découvrez notre manière de fonctionner.",
+      "page": {
+        "title": "Développement",
+        "description": "Découvrez comment nous procédons, notre manière de fonctionner sur les projets que nous réalisons."
+      },
+      "sections": {
+        "beginning": {
+          "title": "1. Le premier contact",
+          "text": "C'est pendant cette phase que nous cernons au mieux votre demande. En effet, nous définissons ensemble, bien souvent dans nos locaux, un cahier des charges adapté à votre activité. Nous réalisons par la suite un devis correspondant à votre demande. Si vous êtes partant, nous commençons le travail à la signature de ce devis.",
+          "button": "Nous contacter"
+        },
+        "processing": {
+          "title": "2. La phase de développement",
+          "text": "Le développement est la phase la plus longue de votre projet. Selon la taille de celui-ci, elle peut prendre une semaine comme plusieurs mois. Nous travaillons de manière Agile et nous donnons tout au long du projet le plus d'informations possible pour nos clients. Nous vous accompagnons dans vos idées et nous vous conseillons pour réaliser un travail complet et dans les temps.",
+          "button": "Notre portfolio"
+        },
+        "ending": {
+          "title": "3. La mise en production",
+          "text": "Après le développement vient l'étape de la mise en production. Il s'agit du lancement de votre projet, l'installer sur un serveur et la rendre accessible au monde entier. Si vous avez choisi une de nos offres d'hébergement, nous nous en occupons, le cas échéans nous vous donnons tout les outils pour permettre un déploiement facile et rapide de votre projet. Nous commencons tout d'abord par installer l'appilication sur un serveur de pré-production, sur lequel nous faisont tout les tests nécessaire pour garantir la qualité de votre produit. Une fois toute les vérification effectué, nous déploiont votre projet sur nos serveurs hébergé en France.",
+          "button": "Nos offres d'hébergement"
+        },
+        "support": {
+          "title": "4. Le support technique",
+          "text": "Pour garantir la fiabilité de votre application, nous assurons un mois de support sur les projets que nous développons et hébergeons. Nous proposons également des offres pour des durée étendu pour que votre application soit toujours à la pointe des dernières nouveautés.",
+          "button": "Nos offres de support"
+        }
+      }
+    },
+    "home": {
+      "contact": {
+        "title": "<i class=\"fa fa-envelope\"></i> Nous contacter"
+      },
+      "consulting": {
+        "title": "Besoin de conseils, de formations ?",
+        "text": "Nos intervenants sont formés pédagogiquement pour gérer des groupes et dispenser d'une formation de qualité.",
+        "button": "Nous contacter"
+      },
+      "description": {
+        "media": {
+          "project": {
+            "title": "Réaliser votre projet avec Smalt",
+            "text": "Smalt réalise des projets de différentes envergures. Que vous soyez entrepreneur, artisan ou représentant d'une grande entreprise, nous savons nous adapter à votre demande, votre rythme et vos objectifs.",
+            "link": "Nous contacter"
+          },
+          "idea": {
+            "title": "Une idée en tête ?",
+            "text": "Dans la plus part des cas, nos clients viennent avec une ou plusieurs idées en tête. Nous les aidons à les réaliser en choisissant les technologies, les hébergements, les supports les plus adaptés à leurs besoins."
+          }
+        }
+      },
+      "header": {
+        "brand": "Smalt Création",
+        "text": "Agence web et start-up basée sur Lyon, Smalt est une société spécialisée dans le <strong>développement de sites et d'applications</strong>.<span class=\"hidden-xs hidden-sm\"><br>L'informatique évoluant, nous développons des applications performantes et attractives dans un esprit collaboratif et professionnel.</span>",
+        "address": "<span itemprop=\"streetAddress\">16 Rue Jean Desparmet</span>, <span itemprop=\"postalCode\">69008</span> <span itemprop=\"addressLocality\">Lyon</span>"
+      },
+      "page": {
+        "title": "Développement web Lyon",
+        "description": "Agence de développement web répondant de manière innovante aux nouvelles demandes, Smalt Création travaille sur MeteorJS, Javascript en général et Symfony2."
+      },
+      "portfolio": {
+        "title": "Nos réalisations",
+        "text": "Vous trouverez les projets que nous avons réalisés et que nous maintenons. N'hésitez pas à les trier par nom, taille ou technologie.",
+        "actions": {
+          "sort": {
+            "name": "Nom",
+            "importance": "Taille"
+          }
+        },
+        "contributions": {
+          "title": "Nos contributions"
+        },
+        "articles": {
+          "title": "Nos articles",
+          "none": "Nous n'avons aucun article à vous présenter pour l'instant. Merci de revenir un peu plus tard."
+        }
+      },
+      "services": {
+        "box": {
+          "development": {
+            "title": "Développement",
+            "text": "Nous utilisons des technologies performantes et innovantes afin de proposer des applications toujours dans l'ère du temps. Connaissez-vous peut-être <a href=\"http://meteor.com\">MeteorJS</a> ou <a href=\"http://symfony.com\">Symfony2</a> ?",
+            "link": "Comment ça marche"
+          },
+          "hosting": {
+            "title": "Hébergement",
+            "text": "Nous fournissons des solutions d'hébergements adaptées à vos besoins. De l'installation du système à la mise en production de votre site, nous nous chargeons de tout.",
+            "link": "Nos offres d'hébergements"
+          },
+          "support": {
+            "title": "Support",
+            "text": "Lorsque nous nous occupons d'un projet, nous aimons qu'il soit au top de sa forme. Nous proposons donc des solutions de support adaptées à votre demande.",
+            "link": "Détails du support"
+          }
+        }
+      },
+      "skills": {
+        "modal": {
+          "title": "Pourquoi %s ?"
+        }
+      }
+    },
+    "hosting": {
+      "onDemand": {
+        "title": "Besoin de plus de puissance ?",
+        "text": "Votre projet a des besoins bien précis ? Vous souhaitez bénéficier d'une infrastructure sur mesure ?",
+        "button": "Contactez-nous"
+      },
+      "basic": {
+        "title": "Hébergement basique",
+        "discount": "%s",
+        "price": "<strong>%s €</strong> <small>TTC</small>",
+        "li": {
+          "domain": "Nom de domaine inclus",
+          "disk": "10 Go d'espace disque",
+          "email": "10 comptes email 5Go",
+          "back-up": "Pas de sauvegarde",
+          "data": "200 Mo de données SQL"
+        },
+        "info": "Tarifs mensuels",
+        "form": {
+          "help-text": "mois"
+        }
+      },
+      "premium": {
+        "title": "Hébergement premium",
+        "discount": "%s",
+        "price": "<strong>%s €</strong> <small>TTC</small>",
+        "li": {
+          "domain": "Nom de domaine inclus",
+          "disk": "250 Go d'espace disque",
+          "email": "100 comptes email 5Go",
+          "back-up": "1 sauvegarde par mois",
+          "data": "2 Go de données SQL"
+        },
+        "info": "Tarifs mensuels",
+        "form": {
+          "help-text": "mois"
+        }
+      },
+      "vps": {
+        "title": "Hébergement VPS",
+        "discount": "%s",
+        "price": "<strong>%s €</strong> <small>TTC</small>",
+        "li": {
+          "domain": "Nom de domaine offert pendant 1 an",
+          "disk": "SSD 10 Go",
+          "email": "10 comptes email 5Go",
+          "back-up": "1 sauvegarde par mois",
+          "cpu": "1 vCore"
+        },
+        "info": "Tarifs mensuels",
+        "form": {
+          "help-text": "mois"
+        }
+      },
+      "security":{
+        "ssl": {
+          "title": "Certificat SSL",
+          "discount": "%s",
+          "price": "<strong>%s €</strong> <small>TTC</small>",
+          "li": {
+            "type": "COMODO PositiveSSL",
+            "domain": "Domaine unique",
+            "nopaperwork": "Aucune formalité",
+            "security": "Échanges sécurisés",
+            "seo": "Renouvellement à 29.99 € TTC par an"
+          },
+          "info": "Tarifs annuels",
+          "form": {
+            "help-text": "année"
+          }
+        },
+        "title": "La sécurité de votre projet",
+        "wells": {
+          "exchange": {
+            "title": "<i class=\"fa fa-exchange\"></i> Des échanges <strong>sécurisés</strong>",
+            "text": "Le protocole <strong>SSL (Secure Sockets Layer)</strong> sécurise les flux d’informations transmis entre votre site et vos internautes. Il vous garanti la confidentialité des transferts d’information ainsi que l'assurance que votre site soit hébergé sur nos serveurs, garanti par le <em class=\"green\">https</em> et le <strong class=\"green\"><i class=\"fa fa-lock\"></i></strong>."
+          },
+          "standard": {
+            "title": "<i class=\"fa fa-trademark\"></i> Un protocole <strong>standardisé</strong>",
+            "text": "Le <strong>SSL</strong> est aujourd'hui le protocole de sécurité des échanges par excellence, il est utilisé par absolument tous les navigateurs modernes tel que :",
+            "brands": {
+              "ff": "<i class=\"fa fa-firefox\"></i> Modzilla Firefox",
+              "chrome": "<i class=\"fa fa-chrome\"></i> Google Chrome",
+              "ie": "<i class=\"fa fa-internet-explorer\"></i> Microsoft Internet Explorer"
+            }
+          },
+          "seo": {
+            "title": "<i class=\"fa fa-level-up\"></i> Être mieux <strong>référencé</strong>",
+            "text": "Les moteurs de recherche prennent en compte la sécurité d'un site web. Un site officiel ou de e-commerce, disposé d'un <strong>certificat</strong> valide et aux dernières normes, est un minimum pour prétendre à un bon référencement sur internet."
+          }
+        }
+      },
+      "page": {
+        "title": "Hébergements",
+        "description": "Retrouvez nos solutions d'hébergements. Que ce soit un serveur mutualisé, un VPS classic ou un serveur dédié, nous avons la formule adaptée à vos besoins."
+      },
+      "title": "Hébergements",
+      "description": "Nos hébergements sont adaptés à vos besoins. De l'installation du système à la mise en production de votre site, nous nous chargeons de tout.",
+      "asterisk": "* Lorsque que vous souscrivez à un de nos abonnements, vous vous engagez pour un an. Sur cette année, vous pouvez régler par trimestre, semestre ou à l'année."
+    },
+    "project": {
+      "show": {
+        "external-link": "Lien externe du projet"
+      }
+    },
+    "support": {
+      "unity": {
+        "title": "À l'unité",
+        "discount": "%s",
+        "price": "<strong>%s €</strong> <small>TTC</small>",
+        "li": {
+          "tracking": "Un meilleur suivi",
+          "fast": "Une réponse rapide",
+          "contact": "Un contact technique",
+          "scalability": "Une offre flexible"
+        },
+        "info": "Tarifs horaires",
+        "form": {
+          "help-text": "heures"
+        }
+      },
+      "subscription": {
+        "title": "Abonnement mensuel",
+        "discount": "%s",
+        "price": "<strong>%s €</strong> <small>TTC</small>",
+        "li": {
+          "hours": "8 heures de support",
+          "cheap": "Une formule économique",
+          "purchase": "Un renouvellement facile",
+          "scalability": "Un nombre d'heure adaptable"
+        },
+        "info": "Tarifs mensuels",
+        "form": {
+          "help-text": "mois"
+        }
+      },
+      "texts": {
+        "free": {
+          "title": "<i class=\"fa fa-check-circle-o\"></i> Un suivi gratuit <small>pendant 1 mois </small>",
+          "text": "Dès la mise en production de votre projet, nous assurons gratuitement un mois de support. De plus, si nous avons développé votre projet et que nous l'hébergeons, vous bénéficiez gratuitement d'une heure de support par mois."
+        },
+        "continue": {
+          "title": "<i class=\"fa fa-repeat\"></i> Un suivi continu",
+          "text": "N'ayez plus peur des agences qui ne vous donnent plus de nouvelles ou qui vous lâchent du jour au lendemain."
+        },
+        "accurate": {
+          "title": "<i class=\"fa fa-search\"></i> Un suivi précis",
+          "text": "La transparence est notre philosophie. Vous ne louperez rien de notre avancement."
+        }
+      },
+      "page": {
+        "title": "Support",
+        "description": "Retrouvez nos solutions de support pour vos projets faits par Smalt Création."
+      },
+      "title": "Support",
+      "description": "Notre support de développement est adapté à vos besoins. Nous faisons en sorte que rien ne nous échappe."
+    },
+    "terms": {
+      "page": {
+        "title": "Conditions",
+        "description": "Retrouvez nos conditions générales de ventes et d'utilisations."
+      }
+    },
+    "why": {
+      "meteor": {
+        "home": {
+          "title": "<i class=\"fa fa-commenting\"></i> Pourquoi choisir MeteorJS ?",
+          "texts": {
+            "description": "<strong>Framework entièrement JavaScript, MeteorJS est une de nos technologies phares.</strong> Rapide, flexible, performant, ce framework possède tous les avantages pour créer une application web, c'est pourquoi Meteor est actuellement un acteur majeur du développement JavaScript.<br> Chez Smalt, nous reconnaissons le potentiel de certaines technologies, c'est pourquoi nous sommes <strong>une des premières agences web</strong> à travailler avec <strong>Meteor</strong>.",
+            "modern": " <strong><i class=\"fa fa-star\"></i> Un gage de modernité.</strong>Le marché de l'IT est aujourd'hui très concurentiel. Meteor apporte un gage de modernité à vos projets qui se démarqueront du flot d'applications qui sortent tous les jours."
+          },
+          "button": "Découvrir Meteor"
+        },
+        "demo": {
+          "title": {
+            "first": "Demonstration Meteor",
+            "second": "Pourquoi Meteor ?"
+          },
+          "texts": {
+            "description": "Cum bulla cantare, omnes caesiumes carpseris peritus, primus imberes.",
+            "faster": "Parrots whine from graces like rainy masts.",
+            "asynchrone": "Golly gosh there's nothing like the black riddle rising on the sun.",
+            "lightweight": "Freebooters sing on courage at rummage island!"
+          }
+        }
+      },
+      "ubuntu": {
+        "title": "<i class=\"fa fa-commenting\"></i> Pourquoi choisir Ubuntu Server ?",
+        "texts": {
+          "description": "<strong>Basé sur Debian, Ubuntu Server est le systeme que nous utilisons sur nos serveurs.</strong> Performant et disposant de l'immense bibliothèque Canonical, cet OS est de plus en plus utiliser aujourd'hui.<br> Chez Smalt, nous sommes toujours à l'avant-garde, c'est pourquoi nous travaillons les dernière technologies du marché",
+          "modern": " <strong><i class=\"fa fa-star\"></i> Une porte vers le future.</strong> Nous n'hésitons pas à travailler avec des technologies telles que <a href=\"https:\//www.docker.com/\"><strong>Docker</strong></a> ou <a href=\"https://www.openstack.org/\"><strong>OpenStack</strong></a>"
+        },
+        "button": "Découvrir Ubuntu Server"
+      }
+    }
+  }
+}

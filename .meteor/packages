@@ -4,45 +4,47 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-meteor-base             # Packages every Meteor app needs to have
-mobile-experience       # Packages for a great mobile UX
-mongo                   # The database Meteor supports right now
-blaze-html-templates    # Compile .html files into Meteor Blaze views
-session                 # Client-side reactive dictionary for your app
-jquery                  # Helpful client-side library
-tracker                 # Meteor's client-side reactive programming library
-standard-minifiers      # JS/CSS minifiers run for production mode
-es5-shim                # ECMAScript 5 compatibility for older browsers.
-ecmascript              # Enable ECMAScript2015+ syntax in app code
-iron:router
-okgrow:router-autoscroll
-less
-nemo64:bootstrap
-email
-tap:i18n
-reactive-var
-momentjs:moment
-sacha:spin
-fortawesome:fontawesome
-natestrauser:animate-css
-mrt:fancybox
-iamkevingreen:imagesloaded
-isotope:isotope
-rzymek:moment-locale-fr
-martino:i18n-conf
-ejson
-check
-smaltcreation:alert-i18n
-reywood:publish-composite
-spiderable
-manuelschoebel:ms-seo
+meteor-base@1.0.4           # Packages every Meteor app needs to have
+mobile-experience@1.0.4     # Packages for a great mobile UX
+mongo@1.1.10                # The database Meteor supports right now
+blaze-html-templates@1.0.4  # Compile .html files into Meteor Blaze views
+session@1.1.6               # Client-side reactive dictionary for your app
+jquery@1.11.9               # Helpful client-side library
+tracker@1.1.0               # Meteor's client-side reactive programming library
+es5-shim@4.6.13             # ECMAScript 5 compatibility for older browsers.
+ecmascript@0.5.7            # Enable ECMAScript2015+ syntax in app code
+
+check@1.2.3
+ejson@1.0.12
+less@2.7.4
+email@1.1.16
+reactive-var@1.0.10
+spiderable@1.0.13
+standard-minifier-css
+standard-minifier-js
+
 aldeed:autoform
+aldeed:simple-schema
+fortawesome:fontawesome
+gadicohen:sitemaps
+gwendall:autoform-i18n
+gwendall:simple-schema-i18n
+iamkevingreen:imagesloaded
+iron:router
+isotope:isotope
+manuelschoebel:ms-seo
+martino:i18n-conf
+meteorhacks:fast-render
+momentjs:moment
+mrt:fancybox
+natestrauser:animate-css
+nemo64:bootstrap
+okgrow:router-autoscroll
+reywood:iron-router-ga
+reywood:publish-composite
+rzymek:moment-locale-fr
+sacha:spin
+smaltcreation:alert-i18n
 smaltcreation:autoform-input-addon-icon
 smaltcreation:autoform-intl-tel-input
-aldeed:simple-schema
-gwendall:simple-schema-i18n
-gwendall:autoform-i18n
-mquandalle:bower
-gadicohen:sitemaps
-reywood:iron-router-ga
-meteorhacks:fast-render
+tap:i18n

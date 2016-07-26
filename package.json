@@ -1,0 +1,15 @@
+{
+  "name": "smalt-creation-website",
+  "version": "1.0.0",
+  "description": "Company's website made with Meteor",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smaltcreation/website.git"
+  },
+  "author": "Smalt Création",
+  "bugs": {
+    "url": "https://github.com/smaltcreation/website/issues"
+  },
+  "homepage": "https://github.com/smaltcreation/website#readme",
+  "private": true
+}

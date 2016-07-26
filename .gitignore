@@ -2,3 +2,6 @@
 .meteor/local
 mup*
 settings*
+/node_modules/
+client/lib/bootstrap/custom.bootstrap.less
+client/lib/bootstrap/custom.bootstrap.mixins.import.less
