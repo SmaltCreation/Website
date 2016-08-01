@@ -20,8 +20,8 @@ less@2.7.4
 email@1.1.16
 reactive-var@1.0.10
 spiderable@1.0.13
-standard-minifier-css
-standard-minifier-js
+standard-minifier-css@1.1.8
+standard-minifier-js@1.1.8
 
 aldeed:autoform
 aldeed:simple-schema
