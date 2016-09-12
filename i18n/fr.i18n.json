@@ -13,8 +13,11 @@
     "email": "contact@smaltcreation.com"
   },
   "project": {
+    "beezsport": {
+      "description": "Laissez-vous séduire par les sports collectifs. Basketball - Football 5x5 - Badminton 2x2."
+    },
     "crlive": {
-      "description": "Le forum permanent des associations de la Croix-rousse sur Lyon."
+      "description": "Croix-Rousse Live, le forum permanent des associations de la Croix-rousse sur Lyon."
     },
     "icon": {
       "description": "Élargissez votre réseau en rencontrant directement des contacts près de chez vous."
@@ -24,6 +27,9 @@
     },
     "l7rg": {
       "description": "Site web et plateforme principale de l'association de management de centre ville de Lyon 7."
+    },
+    "overiz": {
+      "description": "Revendeur d'articles pour administrations, professionnels et particuliers."
     },
     "rey-freres": {
       "description": "Entreprise familiale de mécanique générale qui a voulu booster sa réputation."

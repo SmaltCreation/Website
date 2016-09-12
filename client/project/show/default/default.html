@@ -4,12 +4,14 @@
             <div class="container">
                 <h1>
                     {{project.name}}
-                    <small>
-                        <a href="{{project.url}}" class="btn btn-default btn-xs" target="_blank">
-                            <i class="fa fa-external-link"></i>
-                            {{_ 'template.project.show.external-link'}}
-                        </a>
-                    </small>
+                    {{#if project.url}}
+                        <small>
+                            <a href="{{project.url}}" class="btn btn-default btn-xs" target="_blank">
+                                <i class="fa fa-external-link"></i>
+                                {{_ 'template.project.show.external-link'}}
+                            </a>
+                        </small>
+                    {{/if}}
                 </h1>
                 <div class="technologies">
                     {{#each technologies}}
